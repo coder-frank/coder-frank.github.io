@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+<!--INTRODUCTITON START-->
+<div class="intro">
+<!--Nav Bar-->
+<div class="header" id="home">
+	<h4 class="name"><b>Coder-Frank</b></h4>
+<i id="link" class="fas fa-bars" onclick="openMenu()"></i>
+	<div id="menu" class="links">
+		<a href="#home"><b>Home</b></a>
+		<a href="#about" class="smooth-scroll-link"><b>About</b></a>
+		<!--<a href="#skills"><b>Skills</b></a>
+		<a href="#cert"><b>Certificates</b></a>
+		-->
+		<a href="#projects" class="smooth-scroll-link"><b>Projects</b></a>
+		<a href="#contact" class="smooth-scroll-link"><b>Contact Me</b></a>
+	</div>
+</div>
+<br><br>
+
+	<div class="welcome">
+		<h1 class="typewrite" data-period="2000" data-type='[ "My name is Francis.", "I am a Backend Developer", "I love Coding.", "I love Problem Solving.", "Have a great day!" ]'>
+				<span class="wrap"></span>
+		</h1>
+		<br>
+		<h5>Developer | Freelancer | Software Engineer | Backend Developer</h3>
+		<a href="./assets/others/resume.pdf" download><button class="btn btn-primary">Download Resume</button></a>
+	</div>
+<br>
+</div>
+
+<!--INTRODUCTITON END-->
+
+<br>
+<!--ABOUT START-->
+
+<section class="about" id="about">
+
+	<div class="image">
+		<img src="./assets/images/me.jpg" alt="">
+	</div>
+	<div class="body">
+		<br>
+		<h1>About Me</h1>
+
+		<div class="container">
+			<div class="row">
+				<div class="col pill"><i class="fab fa-html5"></i> HTML</div>
+				<div class="col pill"><i class="fab fa-css3-alt"></i> CSS</div>
+				<div class="col pill"><i class="fab fa-js"></i> JS</div>
+				<div class="col pill"><i class="fab fa-php"></i> PHP</div>
+				<div class="col pill"><i class="fas fa-database"></i> MySQL</div>
+			</div>
+		</div>
+		<br>
+		<p class="text">
+			Hello, my name is Mbanusi Ebuka Francis,
+			 am 19 year old and i started coding when 
+			 i was 16 year old.My first language was HTML 
+			 (Hypertext Markup Language), then i migrated to CSS
+			  (Cascading StyleSheet), after that i moved to Javascript
+			  which was very fun, i used a lot of years to learn more about this technologies
+			  before i moved to PHP and MySQL, which i loved a lot, that made me
+			  want to focus more on backend development because i love problem solving.
+			  So i started a career path in backend development and i kept on advancing my skills
+			  and also learning new and in demand technologies.
+		</p>
+
+	</div>
+
+</section>
+
+<!--ABOUT END-->
+
+
+<!--START OF PROJECTS-->
+<section class="projects" id="projects">
+	<center><h1><b>Projects</b></h1></center>
+	<span>(Below are some of the projects i have done, it may not look pretty but am a backend developer who focus on the functionality and security of the site)</span>
+	<hr>
+	<br>
+    
+	<div class="card-container">
+	    <!-- Add more cards as needed -->
+	    <div class="card">
+		<img src="./assets/images/projects/hudly.png" class="card-img-top" alt="...">
+		<div class="card-body">
+		    <h5 class="card-title">Hudly</h5>
+		    <p class="card-text">
+			This is a multi-vendor e-commerce website with seller admin panel is an online marketplace where multiple sellers can sell their
+			products, each having their own admin panel to manage listings and orders. It provides a diverse product range and a
+			seamless shopping experience for customers.
+		    </p>
+		    <a href="http://hudly-store.onlinewebshop.net/" class="btn btn-primary"><i class="fas fa-eye"></i> Demo</a>
+		</div>
+	    </div>
+    
+	</div>
+</section>
+    
+<!--END OF PROJECTS-->
+
+<section class="contact" id="contact">
+<br>
+<div class="left">
+	<img src="./assets/images/contact.jpg" alt="">
+</div>
+
+<div class="right">
+	<h2>Want To Get In Touch?</h2>
+	<p>Reach me on any of the Social Media Platform</p>
+	<div class="social">
+		<a href="https://facebook.com/MbanusiF" title="Facebook"><i class="fab fa-facebook"></i></a>
+		<a href="https://twitter.com/MbanusiF" title="Twitter"><i class="fab fa-twitter"></i></a>
+		<a href="https://www.instagram.com/d_official_francis/" title="Instagram"><i class="fab fa-instagram"></i></a>
+		<a href="https://www.linkedin.com/in/ebuka-mbanusi-851090226/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+		<a href="https://wa.me/+2349071195594" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+		<a href="https://github.com/coder-frank"><i class="fab fa-github"></i></a>
+	</div>
+	<br><hr>
+	<h4>Want to send a message?</h4>
+	<br>
+	<form>
+		<div class="form-group">
+		  <input type="text" required class="form-control" id="name" aria-describedby="emailHelp" placeholder="Your Name">
+		</div>
+
+		<div class="form-group">
+			<input type="email" required class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+		</div>
+		
+		<div class="form-group">
+			<textarea class="form-control" required id="message" rows="8" placeholder="Your Message"></textarea>
+		</div>
+		<button type="button" onclick="sendMail()" class="btn btn-primary">Send Message</button>
+	      </form>
+</div>
+<br>
+</section>
+<br>
+<button class="backUp" onclick="smoothScrollTo(0)"><b><i class="fa fa-arrow-up"></i></b></button>
+<br><br><br>
+<footer>
+	<p>Copyright &copy 2023 Mbanusi Ebuka Francis. All rights reserved</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
