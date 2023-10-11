@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Hi there, my name is Mbanusi Ebuka Francis and am a Backend Developer">
-	<title>Ebuka Mbanusi</title>
+	<title>My Portfolio</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
@@ -18,13 +18,13 @@
 	<h4 class="name"><b>Coder-Frank</b></h4>
 <i id="link" class="fas fa-bars" onclick="openMenu()"></i>
 	<div id="menu" class="links">
-		<a href="#home"><b>Home</b></a>
-		<a href="#about" class="smooth-scroll-link"><b>About</b></a>
+		<a href="#home" onclick="closeM()"><b>Home</b></a>
+		<a href="#about" onclick="closeM()" class="smooth-scroll-link"><b>About</b></a>
 		<!--<a href="#skills"><b>Skills</b></a>
 		<a href="#cert"><b>Certificates</b></a>
 		-->
-		<a href="#projects" class="smooth-scroll-link"><b>Projects</b></a>
-		<a href="#contact" class="smooth-scroll-link"><b>Contact Me</b></a>
+		<a href="#projects" onclick="closeM()" class="smooth-scroll-link"><b>Projects</b></a>
+		<a href="#contact" onclick="closeM()" class="smooth-scroll-link"><b>Contact Me</b></a>
 	</div>
 </div>
 <br><br>
@@ -99,8 +99,7 @@
 				<h5 class="card-title">Hudly</h5>
 				<p class="card-text">
 				This is a multi-vendor e-commerce website with seller admin panel is an online marketplace where multiple sellers can sell their
-				products, each having their own admin panel to manage listings and orders. It provides a diverse product range and a
-				seamless shopping experience for customers.
+				products, each having their own admin panel to manage listings and orders.
 				</p>
 				<a href="http://hudly-store.onlinewebshop.net/" target="_blank" class="btn btn-primary"><i class="fas fa-eye"></i> View</a>
 			</div>
@@ -111,9 +110,21 @@
 			<div class="card-body">
 				<h5 class="card-title">Development Capacity</h5>
 				<p class="card-text">
-					This platform allows registered users to search for jobs, read blogs, and upload job listings and articles. Admins oversee content, user access, events, and email communication, ensuring a comprehensive job-seeking experience.
+					This platform allows registered users to search for jobs, read blogs, and upload job listings and articles. Admins oversee content, user access, events, and email communication.
 				</p>
 				<a href="https://developmentcapacity.com" target="_blank" class="btn btn-primary"><i class="fas fa-eye"></i> View</a>
+			</div>
+	    </div>
+	    
+	    
+	    <div class="card">
+			<img src="./assets/images/projects/myMail.png" class="card-img-top" alt="Image of development capacity">
+			<div class="card-body">
+				<h5 class="card-title">MyMail</h5>
+				<p class="card-text">
+					This platform allows registered users to send emails to one another, sending and receiving mail outside of the server is not permitted, this ensures that users get spam free mail. New features will be added soon.
+				</p>
+				<a href="https://mymail.coderfrank.com.ng" target="_blank" class="btn btn-primary"><i class="fas fa-eye"></i> View</a>
 			</div>
 	    </div>
     
@@ -160,7 +171,7 @@
 <br>
 </section>
 <br>
-<button class="backUp" onclick="smoothScrollTo(0)"><b><i class="fa fa-arrow-up"></i></b></button>
+<button class="backUp" style="outline:none;" onclick="smoothScrollTo(0)"><b><i class="fa fa-arrow-up"></i></b></button>
 <br><br><br>
 <footer>
 	<p>Copyright &copy 2023 Mbanusi Ebuka Francis. All rights reserved</p>

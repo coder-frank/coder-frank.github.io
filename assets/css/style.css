@@ -284,10 +284,10 @@ body {
     
     .card {
 	display: inline-block;
-	width: 25rem;
+	width: 23rem;
 	text-align: center;
 	margin-right: 10px; /* Add some space between cards */
-	background-color: #692dd1;
+	background-color: #5a26b5;
 	color: white;	
 }
 .card-title {
