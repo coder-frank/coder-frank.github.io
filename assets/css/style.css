@@ -80,8 +80,8 @@ header {
   background-color: var(--primary-color);
   color: var(--text-color);
 }
-#skills h5 {
-  color: #333; /* Dark gray for good contrast */
+#skills h5, #skills h2 {
+  color: #333 !important; /* Dark gray for good contrast */
 }
 header img {
   width: 200px;
