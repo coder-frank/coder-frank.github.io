@@ -80,9 +80,66 @@ header {
   background-color: var(--primary-color);
   color: var(--text-color);
 }
-#skills h5, #skills h2 {
-  color: #333 !important; /* Dark gray for good contrast */
+
+#skills h2 {
+  color: #1a1a2e;
 }
+
+.skills-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.skills-track {
+  display: flex;
+  white-space: nowrap;
+  animation: slide 20s linear infinite;
+}
+
+.skill-item {
+  flex: 0 0 auto;
+  width: 200px; /* Fixed width for consistency */
+  height: 200px; /* Square shape enhances visual appeal */
+  padding: 20px;
+  margin-right: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-item i {
+  font-size: 3rem; /* Scalable icon size */
+  margin-bottom: 15px; /* Spacing between icon and text */
+}
+
+.skill-item h5 {
+  font-size: 1.5rem; /* Clear, readable text */
+  margin: 0;
+  color: #1a1a2e; /* Dark color for contrast */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Moves half the track width */
+  }
+}
+
+/* Optional: Pause on hover for interactivity */
+.skills-slider:hover .skills-track {
+  animation-play-state: paused;
+}
+#certificates h2 {
+  color: #1a1a2e;
+}
+
 header img {
   width: 200px;
   border: 5px solid var(--primary-color);
@@ -159,5 +216,16 @@ header img {
   }
   .progress {
     height: 20px;
+  }
+
+  .skill-item {
+    width: 150px;
+    height: 150px;
+  }
+  .skill-item i {
+    font-size: 2.5rem;
+  }
+  .skill-item h5 {
+    font-size: 1.25rem;
   }
 }
