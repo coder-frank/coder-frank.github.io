@@ -52,6 +52,14 @@ const projectsData = [
     technologies: ["PHP", "Laravel", "OAuth", "AI/ML", "IoT"],
     links: [{ text: "Under NDA", url: "#", type: "secondary" }],
   },
+  {
+    title: "Drivon",
+    type: "Multi-Vendor Marketplace",
+    description:
+      "This is an e-commerce platform that allows users to buy and sell products. It features a multi-vendor system, secure payment processing, and a user-friendly interface. Its a mobile app and i was in charge of database structure, api development and payment processing",
+    technologies: ["PHP", "Laravel", "OAuth", "Stripe", "WebSocket"],
+    links: [{ text: "View Project", url: "https://drivon.org", type: "primary" }],
+  },
 ]
 
 const certificatesData = [
@@ -537,7 +545,7 @@ document.addEventListener(
   "error",
   (e) => {
     if (e.target.tagName === "IMG") {
-      e.target.src = "/placeholder.svg?height=200&width=300&text=Image+Not+Found"
+      e.target.src = "assets/image/other/code-typing-animate.svg"
     }
   },
   true,
