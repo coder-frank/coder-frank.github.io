@@ -1,15 +1,54 @@
 // Data for dynamic content
 const skillsData = [
-  { name: "HTML", icon: "🌐" },
-  { name: "CSS", icon: "🎨" },
-  { name: "JavaScript", icon: "⚡" },
-  { name: "jQuery", icon: "📚" },
-  { name: "Bootstrap", icon: "🅱️" },
-  { name: "PHP", icon: "🐘" },
-  { name: "MySQL", icon: "🗄️" },
-  { name: "Laravel", icon: "🔥" },
-  { name: "Java", icon: "☕" },
-]
+  {
+    name: "HTML5",
+    icon: "fab fa-html5",
+    description: "Semantic markup and modern web standards",
+    level: 95,
+  },
+  {
+    name: "CSS3",
+    icon: "fab fa-css3-alt",
+    description: "Advanced styling, animations, and responsive design",
+    level: 90,
+  },
+  {
+    name: "JavaScript",
+    icon: "fab fa-js-square",
+    description: "ES6+, DOM manipulation, and modern frameworks",
+    level: 88,
+  },
+  {
+    name: "PHP",
+    icon: "fab fa-php",
+    description: "Server-side development and API creation",
+    level: 92,
+  },
+  {
+    name: "Laravel",
+    icon: "fab fa-laravel",
+    description: "Full-stack web application development",
+    level: 90,
+  },
+  {
+    name: "MySQL",
+    icon: "fas fa-database",
+    description: "Database design, optimization, and management",
+    level: 85,
+  },
+  {
+    name: "Git",
+    icon: "fab fa-git-alt",
+    description: "Version control and collaborative development",
+    level: 88,
+  },
+  {
+    name: "API Development",
+    icon: "fas fa-code",
+    description: "RESTful APIs and microservices architecture",
+    level: 92,
+  },
+];
 
 const projectsData = [
   {
@@ -17,23 +56,25 @@ const projectsData = [
     type: "Fintech",
     description:
       "Send money in dollars, receive in your local currency effortlessly with KodaPay. Say goodbye to exchange rate worries and hello to seamless international transactions.",
-    technologies: ["PHP", "Laravel", "MySQL", "API"],
-    links: [{ text: "API Documentation", url: "#", type: "primary" }],
+    technologies: ["PHP", "Laravel", "MySQL", "API", "Payment Gateway"],
+    links: [{ text: "API Documentation", url: "#", type: "secondary" }],
   },
   {
     title: "AdClickGoPPC System",
     type: "Web Application",
     description:
       "Optimize your online presence with Adclickgo.org. Streamline ad management and maximize revenue effortlessly with our advanced advertising solutions.",
-    technologies: ["PHP", "Laravel", "JavaScript", "MySQL"],
-    links: [{ text: "View Project", url: "https://adclickgo.org", type: "primary" }],
+    technologies: ["PHP", "Laravel", "JavaScript", "MySQL", "Bootstrap"],
+    links: [
+      { text: "View Project", url: "https://adclickgo.org", type: "primary" },
+    ],
   },
   {
     title: "P2P Trading Platform",
     type: "Cryptocurrency",
     description:
       "A platform that enables users to trade Payoneer or PayPal funds to crypto via a P2P system. Features secure transactions and real-time exchange rates.",
-    technologies: ["PHP", "Laravel", "API", "WebSocket"],
+    technologies: ["PHP", "Laravel", "WebSocket", "API", "Blockchain"],
     links: [{ text: "Under NDA", url: "#", type: "secondary" }],
   },
   {
@@ -41,26 +82,41 @@ const projectsData = [
     type: "Web Hosting",
     description:
       "Free static web hosting platform that allows signup via GitHub and enables users to deploy static sites. Features a custom-built file manager.",
-    technologies: ["PHP", "Laravel", "GitHub API", "File System"],
-    links: [{ text: "View Project", url: "https://hostam.laravel.cloud", type: "primary" }],
+    technologies: ["PHP", "Laravel", "GitHub API", "File System", "Docker"],
+    links: [
+      {
+        text: "View Project",
+        url: "https://hostam.laravel.cloud",
+        type: "primary",
+      },
+    ],
   },
   {
     title: "Smart Home API",
     type: "IoT System",
     description:
       "An API-based system that connects Alexa, Google Home, mobile app, and web app together. Implements OAuth and a fine-tuned AI model.",
-    technologies: ["PHP", "Laravel", "OAuth", "AI/ML", "IoT"],
+    technologies: ["PHP", "Laravel", "OAuth", "AI/ML", "IoT", "WebSocket"],
     links: [{ text: "Under NDA", url: "#", type: "secondary" }],
   },
   {
     title: "Drivon",
     type: "Multi-Vendor Marketplace",
     description:
-      "This is an e-commerce platform that allows users to buy and sell products. It features a multi-vendor system, secure payment processing, and a user-friendly interface. Its a mobile app and i was in charge of database structure, api development and payment processing",
-    technologies: ["PHP", "Laravel", "OAuth", "Stripe", "WebSocket"],
-    links: [{ text: "View Project", url: "https://drivon.org", type: "primary" }],
+      "This is an e-commerce platform that allows users to buy and sell products. It features a multi-vendor system, secure payment processing, and a user-friendly interface. Mobile app with database structure, API development and payment processing.",
+    technologies: [
+      "PHP",
+      "Laravel",
+      "OAuth",
+      "Stripe",
+      "WebSocket",
+      "Mobile API",
+    ],
+    links: [
+      { text: "View Project", url: "https://drivon.org", type: "primary" },
+    ],
   },
-]
+];
 
 const certificatesData = [
   {
@@ -76,183 +132,201 @@ const certificatesData = [
   {
     title: "JavaScript Certificate",
     description: "Certification in hands-on experience with JavaScript",
-    image: "/assets/image/certificates/javascript.png",
+    image: "assets/image/certificates/javascript.png",
   },
   {
     title: "jQuery Certificate",
     description: "Certification in hands-on experience with jQuery",
-    image: "/assets/image/certificates/jquery.png",
+    image: "assets/image/certificates/jquery.png",
   },
   {
     title: "PHP Certificate",
     description: "Certification in PHP programming and development",
-    image: "/assets/image/certificates/php.png",
+    image: "assets/image/certificates/php.png",
   },
   {
     title: "MySQL Certificate",
     description: "Certification in database management with MySQL",
-    image: "/assets/image/certificates/sql.png",
+    image: "assets/image/certificates/sql.png",
   },
   {
     title: "Laravel Certificate",
     description: "Certification in Laravel framework development",
-    image: "/assets/image/certificates/laravel.png",
+    image: "assets/image/certificates/laravel.png",
   },
   {
     title: "Java Certificate",
     description: "Certification in Java programming and development",
-    image: "/assets/image/certificates/java.jpg",
+    image: "assets/image/certificates/java.jpg",
   },
-]
+];
 
 // Particle animation
 class ParticleSystem {
   constructor(canvas) {
-    this.canvas = canvas
-    this.ctx = canvas.getContext("2d")
-    this.particles = []
-    this.mouse = { x: 0, y: 0 }
+    this.canvas = canvas;
+    this.ctx = canvas.getContext("2d");
+    this.particles = [];
+    this.mouse = { x: 0, y: 0 };
 
-    this.resize()
-    this.init()
-    this.animate()
+    this.resize();
+    this.init();
+    this.animate();
 
-    window.addEventListener("resize", () => this.resize())
+    window.addEventListener("resize", () => this.resize());
     canvas.addEventListener("mousemove", (e) => {
-      this.mouse.x = e.clientX
-      this.mouse.y = e.clientY
-    })
+      this.mouse.x = e.clientX;
+      this.mouse.y = e.clientY;
+    });
   }
 
   resize() {
-    this.canvas.width = window.innerWidth
-    this.canvas.height = window.innerHeight
+    this.canvas.width = window.innerWidth;
+    this.canvas.height = window.innerHeight;
   }
 
   init() {
-    this.particles = []
-    const particleCount = Math.min(80, Math.floor((this.canvas.width * this.canvas.height) / 10000))
+    this.particles = [];
+    const particleCount = Math.min(
+      60,
+      Math.floor((this.canvas.width * this.canvas.height) / 12000)
+    );
 
     for (let i = 0; i < particleCount; i++) {
       this.particles.push({
         x: Math.random() * this.canvas.width,
         y: Math.random() * this.canvas.height,
-        vx: (Math.random() - 0.5) * 0.5,
-        vy: (Math.random() - 0.5) * 0.5,
-        size: Math.random() * 3 + 1,
-        opacity: Math.random() * 0.5 + 0.2,
-      })
+        vx: (Math.random() - 0.5) * 0.3,
+        vy: (Math.random() - 0.5) * 0.3,
+        size: Math.random() * 2 + 1,
+        opacity: Math.random() * 0.3 + 0.1,
+      });
     }
   }
 
   animate() {
-    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height)
+    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
     this.particles.forEach((particle, i) => {
       // Update position
-      particle.x += particle.vx
-      particle.y += particle.vy
+      particle.x += particle.vx;
+      particle.y += particle.vy;
 
       // Wrap around edges
-      if (particle.x < 0) particle.x = this.canvas.width
-      if (particle.x > this.canvas.width) particle.x = 0
-      if (particle.y < 0) particle.y = this.canvas.height
-      if (particle.y > this.canvas.height) particle.y = 0
+      if (particle.x < 0) particle.x = this.canvas.width;
+      if (particle.x > this.canvas.width) particle.x = 0;
+      if (particle.y < 0) particle.y = this.canvas.height;
+      if (particle.y > this.canvas.height) particle.y = 0;
 
       // Draw particle
-      this.ctx.beginPath()
-      this.ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2)
-      this.ctx.fillStyle = `rgba(255, 255, 255, ${particle.opacity})`
-      this.ctx.fill()
+      this.ctx.beginPath();
+      this.ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+      this.ctx.fillStyle = `rgba(37, 99, 235, ${particle.opacity})`;
+      this.ctx.fill();
 
       // Draw connections
       this.particles.slice(i + 1).forEach((otherParticle) => {
-        const dx = particle.x - otherParticle.x
-        const dy = particle.y - otherParticle.y
-        const distance = Math.sqrt(dx * dx + dy * dy)
+        const dx = particle.x - otherParticle.x;
+        const dy = particle.y - otherParticle.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
 
-        if (distance < 100) {
-          this.ctx.beginPath()
-          this.ctx.moveTo(particle.x, particle.y)
-          this.ctx.lineTo(otherParticle.x, otherParticle.y)
-          this.ctx.strokeStyle = `rgba(0, 170, 255, ${0.3 * (1 - distance / 100)})`
-          this.ctx.lineWidth = 1
-          this.ctx.stroke()
+        if (distance < 120) {
+          this.ctx.beginPath();
+          this.ctx.moveTo(particle.x, particle.y);
+          this.ctx.lineTo(otherParticle.x, otherParticle.y);
+          this.ctx.strokeStyle = `rgba(37, 99, 235, ${
+            0.2 * (1 - distance / 120)
+          })`;
+          this.ctx.lineWidth = 1;
+          this.ctx.stroke();
         }
-      })
+      });
 
       // Mouse interaction
-      const mouseDistance = Math.sqrt((this.mouse.x - particle.x) ** 2 + (this.mouse.y - particle.y) ** 2)
+      const mouseDistance = Math.sqrt(
+        (this.mouse.x - particle.x) ** 2 + (this.mouse.y - particle.y) ** 2
+      );
 
       if (mouseDistance < 150) {
-        const force = (150 - mouseDistance) / 150
-        particle.vx += (particle.x - this.mouse.x) * force * 0.001
-        particle.vy += (particle.y - this.mouse.y) * force * 0.001
+        const force = (150 - mouseDistance) / 150;
+        particle.vx += (particle.x - this.mouse.x) * force * 0.0005;
+        particle.vy += (particle.y - this.mouse.y) * force * 0.0005;
       }
 
       // Apply friction
-      particle.vx *= 0.99
-      particle.vy *= 0.99
-    })
+      particle.vx *= 0.995;
+      particle.vy *= 0.995;
+    });
 
-    requestAnimationFrame(() => this.animate())
+    requestAnimationFrame(() => this.animate());
   }
 }
 
 // DOM Content Loaded
 document.addEventListener("DOMContentLoaded", () => {
   // Initialize particle system
-  const canvas = document.getElementById("particles-canvas")
+  const canvas = document.getElementById("particles-canvas");
   if (canvas) {
-    new ParticleSystem(canvas)
+    new ParticleSystem(canvas);
   }
 
   // Populate skills
-  populateSkills()
+  populateSkills();
 
   // Populate projects
-  populateProjects()
+  populateProjects();
 
   // Populate certificates
-  populateCertificates()
+  populateCertificates();
 
   // Initialize navigation
-  initNavigation()
+  initNavigation();
 
   // Initialize scroll effects
-  initScrollEffects()
+  initScrollEffects();
 
   // Initialize modal
-  initModal()
+  initModal();
 
   // Initialize animations
-  initAnimations()
-})
+  initAnimations();
+});
 
 // Populate Skills
 function populateSkills() {
-  const skillsTrack = document.getElementById("skills-track")
-  if (!skillsTrack) return
+  const skillsGrid = document.getElementById("skills-grid");
+  if (!skillsGrid) return;
 
-  // Create skills twice for seamless loop
-  const allSkills = [...skillsData, ...skillsData]
-
-  skillsTrack.innerHTML = allSkills
+  skillsGrid.innerHTML = skillsData
     .map(
       (skill) => `
-        <div class="skill-item">
-            <div class="skill-icon">${skill.icon}</div>
-            <div class="skill-name">${skill.name}</div>
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="${skill.icon}"></i>
+            </div>
+            <div class="skill-content">
+                <h3 class="skill-name">${skill.name}</h3>
+                <p class="skill-description">${skill.description}</p>
+                <div class="skill-level">
+                    <div class="skill-level-label">
+                        <span>Proficiency</span>
+                        <span>${skill.level}%</span>
+                    </div>
+                    <div class="skill-progress">
+                        <div class="skill-progress-bar" style="width: ${skill.level}%"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-    `,
+    `
     )
-    .join("")
+    .join("");
 }
 
 // Populate Projects
 function populateProjects() {
-  const projectsGrid = document.getElementById("projects-grid")
-  if (!projectsGrid) return
+  const projectsGrid = document.getElementById("projects-grid");
+  if (!projectsGrid) return;
 
   projectsGrid.innerHTML = projectsData
     .map(
@@ -265,31 +339,39 @@ function populateProjects() {
             <div class="project-content">
                 <p class="project-description">${project.description}</p>
                 <div class="project-tech">
-                    ${project.technologies.map((tech) => `<span class="tech-tag">${tech}</span>`).join("")}
+                    ${project.technologies
+                      .map((tech) => `<span class="tech-tag">${tech}</span>`)
+                      .join("")}
                 </div>
                 <div class="project-links">
                     ${project.links
                       .map(
                         (link) => `
-                        <a href="${link.url}" class="project-link ${link.type}" ${link.url !== "#" ? 'target="_blank"' : ""}>
+                        <a href="${link.url}" class="project-link ${
+                          link.type
+                        }" ${link.url !== "#" ? 'target="_blank"' : ""}>
                             ${link.text}
-                            ${link.url !== "#" ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" /></svg>' : ""}
+                            ${
+                              link.url !== "#"
+                                ? '<i class="fas fa-external-link-alt"></i>'
+                                : ""
+                            }
                         </a>
-                    `,
+                    `
                       )
                       .join("")}
                 </div>
             </div>
         </div>
-    `,
+    `
     )
-    .join("")
+    .join("");
 }
 
 // Populate Certificates
 function populateCertificates() {
-  const certificatesGrid = document.getElementById("certificates-grid")
-  if (!certificatesGrid) return
+  const certificatesGrid = document.getElementById("certificates-grid");
+  if (!certificatesGrid) return;
 
   certificatesGrid.innerHTML = certificatesData
     .map(
@@ -301,135 +383,138 @@ function populateCertificates() {
                 <p class="certificate-description">${cert.description}</p>
             </div>
         </div>
-    `,
+    `
     )
-    .join("")
+    .join("");
 }
 
 // Navigation
 function initNavigation() {
-  const navbar = document.getElementById("navbar")
-  const navToggle = document.getElementById("nav-toggle")
-  const navMenu = document.getElementById("nav-menu")
-  const navLinks = document.querySelectorAll(".nav-link")
+  const navbar = document.getElementById("navbar");
+  const navToggle = document.getElementById("nav-toggle");
+  const navMenu = document.getElementById("nav-menu");
+  const navLinks = document.querySelectorAll(".nav-link");
 
   // Mobile menu toggle
   navToggle.addEventListener("click", () => {
-    navToggle.classList.toggle("active")
-    navMenu.classList.toggle("active")
-  })
+    navToggle.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
 
   // Close mobile menu when clicking on a link
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      navToggle.classList.remove("active")
-      navMenu.classList.remove("active")
-    })
-  })
+      navToggle.classList.remove("active");
+      navMenu.classList.remove("active");
+    });
+  });
 
   // Smooth scrolling for navigation links
   navLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
-      e.preventDefault()
-      const targetId = link.getAttribute("href")
-      const targetSection = document.querySelector(targetId)
+      e.preventDefault();
+      const targetId = link.getAttribute("href");
+      const targetSection = document.querySelector(targetId);
 
       if (targetSection) {
-        const offsetTop = targetSection.offsetTop - 70
+        const offsetTop = targetSection.offsetTop - 80;
         window.scrollTo({
           top: offsetTop,
           behavior: "smooth",
-        })
+        });
       }
-    })
-  })
+    });
+  });
 
   // Active navigation highlighting
   window.addEventListener("scroll", () => {
-    let current = ""
-    const sections = document.querySelectorAll(".section, .hero")
+    let current = "";
+    const sections = document.querySelectorAll(".section, .hero");
 
     sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 100
-      const sectionHeight = section.clientHeight
+      const sectionTop = section.offsetTop - 120;
+      const sectionHeight = section.clientHeight;
 
-      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-        current = section.getAttribute("id")
+      if (
+        window.scrollY >= sectionTop &&
+        window.scrollY < sectionTop + sectionHeight
+      ) {
+        current = section.getAttribute("id");
       }
-    })
+    });
 
     navLinks.forEach((link) => {
-      link.classList.remove("active")
+      link.classList.remove("active");
       if (link.getAttribute("href") === `#${current}`) {
-        link.classList.add("active")
+        link.classList.add("active");
       }
-    })
-  })
+    });
+  });
 }
 
 // Scroll Effects
 function initScrollEffects() {
-  const navbar = document.getElementById("navbar")
-  const backToTop = document.getElementById("back-to-top")
+  const navbar = document.getElementById("navbar");
+  const backToTop = document.getElementById("back-to-top");
 
   window.addEventListener("scroll", () => {
     // Navbar background on scroll
     if (window.scrollY > 50) {
-      navbar.classList.add("scrolled")
+      navbar.classList.add("scrolled");
     } else {
-      navbar.classList.remove("scrolled")
+      navbar.classList.remove("scrolled");
     }
 
     // Back to top button
     if (window.scrollY > 300) {
-      backToTop.classList.add("visible")
+      backToTop.classList.add("visible");
     } else {
-      backToTop.classList.remove("visible")
+      backToTop.classList.remove("visible");
     }
-  })
+  });
 
   // Back to top functionality
   backToTop.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
-    })
-  })
+    });
+  });
 }
 
 // Modal
 function initModal() {
-  const modal = document.getElementById("certificate-modal")
-  const modalClose = document.querySelector(".modal-close")
+  const modal = document.getElementById("certificate-modal");
+  const modalClose = document.querySelector(".modal-close");
 
-  modalClose.addEventListener("click", closeCertificateModal)
+  modalClose.addEventListener("click", closeCertificateModal);
 
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
-      closeCertificateModal()
+      closeCertificateModal();
     }
-  })
+  });
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") {
-      closeCertificateModal()
+      closeCertificateModal();
     }
-  })
+  });
 }
 
 function openCertificateModal(imageSrc) {
-  const modal = document.getElementById("certificate-modal")
-  const certificateImage = document.getElementById("certificate-image")
+  const modal = document.getElementById("certificate-modal");
+  const certificateImage = document.getElementById("certificate-image");
 
-  certificateImage.src = imageSrc
-  modal.classList.add("active")
-  document.body.style.overflow = "hidden"
+  certificateImage.src = imageSrc;
+  modal.classList.add("active");
+  document.body.style.overflow = "hidden";
 }
 
 function closeCertificateModal() {
-  const modal = document.getElementById("certificate-modal")
-  modal.classList.remove("active")
-  document.body.style.overflow = "auto"
+  const modal = document.getElementById("certificate-modal");
+  modal.classList.remove("active");
+  document.body.style.overflow = "auto";
 }
 
 // Animations
@@ -438,170 +523,182 @@ function initAnimations() {
   const observerOptions = {
     threshold: 0.1,
     rootMargin: "0px 0px -50px 0px",
-  }
+  };
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("fade-in-up")
+        entry.target.classList.add("fade-in-up");
+
+        // Animate skill progress bars
+        if (entry.target.classList.contains("skill-card")) {
+          const progressBar = entry.target.querySelector(".skill-progress-bar");
+          if (progressBar) {
+            setTimeout(() => {
+              progressBar.style.width = progressBar.style.width;
+            }, 300);
+          }
+        }
       }
-    })
-  }, observerOptions)
+    });
+  }, observerOptions);
 
   // Observe elements for animation
   const animateElements = document.querySelectorAll(
-    ".section-title, .project-card, .certificate-card, .stat, .about-text, .contact-info",
-  )
-  animateElements.forEach((el) => observer.observe(el))
+    ".section-title, .project-card, .certificate-card, .stat-card, .about-text, .contact-info, .skill-card, .highlight-item"
+  );
+  animateElements.forEach((el) => observer.observe(el));
 }
 
-// Utility function to easily add new projects
+// Utility functions for easy content management
 function addProject(project) {
-  projectsData.push(project)
-  populateProjects()
+  projectsData.push(project);
+  populateProjects();
 }
 
-// Utility function to easily add new certificates
 function addCertificate(certificate) {
-  certificatesData.push(certificate)
-  populateCertificates()
+  certificatesData.push(certificate);
+  populateCertificates();
 }
 
-// Utility function to easily add new skills
 function addSkill(skill) {
-  skillsData.push(skill)
-  populateSkills()
+  skillsData.push(skill);
+  populateSkills();
 }
-
-// Example usage:
-// addProject({
-//     title: 'New Project',
-//     type: 'Web Application',
-//     description: 'Description of the new project...',
-//     technologies: ['HTML', 'CSS', 'JavaScript'],
-//     links: [
-//         { text: 'View Project', url: 'https://example.com', type: 'primary' }
-//     ]
-// });
 
 // Performance optimization: Throttle scroll events
 function throttle(func, wait) {
-  let timeout
+  let timeout;
   return function executedFunction(...args) {
     const later = () => {
-      clearTimeout(timeout)
-      func(...args)
-    }
-    clearTimeout(timeout)
-    timeout = setTimeout(later, wait)
-  }
+      clearTimeout(timeout);
+      func(...args);
+    };
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+  };
 }
 
 // Apply throttling to scroll events
 const throttledScrollHandler = throttle(() => {
-  // Navbar background on scroll
-  const navbar = document.getElementById("navbar")
+  const navbar = document.getElementById("navbar");
   if (window.scrollY > 50) {
-    navbar.classList.add("scrolled")
+    navbar.classList.add("scrolled");
   } else {
-    navbar.classList.remove("scrolled")
+    navbar.classList.remove("scrolled");
   }
 
-  // Back to top button
-  const backToTop = document.getElementById("back-to-top")
+  const backToTop = document.getElementById("back-to-top");
   if (window.scrollY > 300) {
-    backToTop.classList.add("visible")
+    backToTop.classList.add("visible");
   } else {
-    backToTop.classList.remove("visible")
+    backToTop.classList.remove("visible");
   }
-}, 16)
+}, 16);
 
 // Replace the scroll event listener with throttled version
-window.addEventListener("scroll", throttledScrollHandler)
+window.addEventListener("scroll", throttledScrollHandler);
 
 // Preload images for better performance
 function preloadImages() {
-  const imageUrls = certificatesData.map((cert) => cert.image)
+  const imageUrls = certificatesData.map((cert) => cert.image);
   imageUrls.forEach((url) => {
-    const img = new Image()
-    img.src = url
-  })
+    const img = new Image();
+    img.src = url;
+  });
 }
 
 // Initialize preloading
-document.addEventListener("DOMContentLoaded", preloadImages)
-
-// Add loading states for better UX
-function showLoading(element) {
-  element.innerHTML = '<div class="loading">Loading...</div>'
-}
-
-function hideLoading(element) {
-  element.querySelector(".loading")?.remove()
-}
+document.addEventListener("DOMContentLoaded", preloadImages);
 
 // Error handling for failed image loads
 document.addEventListener(
   "error",
   (e) => {
     if (e.target.tagName === "IMG") {
-      e.target.src = "assets/image/other/code-typing-animate.svg"
+      e.target.src = "assets/image/other/code-typing-animate.svg";
     }
   },
-  true,
-)
+  true
+);
 
 // Accessibility improvements
 document.addEventListener("keydown", (e) => {
-  // Skip to main content with Tab key
-  if (e.key === "Tab" && !e.shiftKey && document.activeElement === document.body) {
-    const mainContent = document.querySelector("main") || document.querySelector("#about")
+  if (
+    e.key === "Tab" &&
+    !e.shiftKey &&
+    document.activeElement === document.body
+  ) {
+    const mainContent =
+      document.querySelector("main") || document.querySelector("#about");
     if (mainContent) {
-      mainContent.focus()
-      e.preventDefault()
+      mainContent.focus();
+      e.preventDefault();
     }
   }
-})
+});
 
 // Add focus management for modal
 function trapFocus(element) {
   const focusableElements = element.querySelectorAll(
-    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
-  )
-  const firstElement = focusableElements[0]
-  const lastElement = focusableElements[focusableElements.length - 1]
+    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+  );
+  const firstElement = focusableElements[0];
+  const lastElement = focusableElements[focusableElements.length - 1];
 
   element.addEventListener("keydown", (e) => {
     if (e.key === "Tab") {
       if (e.shiftKey) {
         if (document.activeElement === firstElement) {
-          lastElement.focus()
-          e.preventDefault()
+          lastElement.focus();
+          e.preventDefault();
         }
       } else {
         if (document.activeElement === lastElement) {
-          firstElement.focus()
-          e.preventDefault()
+          firstElement.focus();
+          e.preventDefault();
         }
       }
     }
-  })
+  });
 
-  firstElement.focus()
+  firstElement.focus();
 }
 
 // Enhanced modal functionality with focus trapping
 function openCertificateModalEnhanced(imageSrc) {
-  const modal = document.getElementById("certificate-modal")
-  const certificateImage = document.getElementById("certificate-image")
+  const modal = document.getElementById("certificate-modal");
+  const certificateImage = document.getElementById("certificate-image");
 
-  certificateImage.src = imageSrc
-  modal.classList.add("active")
-  document.body.style.overflow = "hidden"
+  certificateImage.src = imageSrc;
+  modal.classList.add("active");
+  document.body.style.overflow = "hidden";
 
   // Trap focus within modal
-  trapFocus(modal)
+  trapFocus(modal);
 }
 
 // Update the global function
-window.openCertificateModal = openCertificateModalEnhanced
+window.openCertificateModal = openCertificateModalEnhanced;
+
+// Smooth reveal animations for elements
+function revealOnScroll() {
+  const reveals = document.querySelectorAll(".fade-in-up");
+
+  reveals.forEach((reveal) => {
+    const windowHeight = window.innerHeight;
+    const elementTop = reveal.getBoundingClientRect().top;
+    const elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveal.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+// Initialize everything when DOM is loaded
+document.addEventListener("DOMContentLoaded", () => {
+  revealOnScroll(); // Check for elements in view on load
+});
