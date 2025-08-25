@@ -1,448 +1,866 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mbanusi Ebuka Francis - Software Engineer</title>
+    <script src="js/script.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ebuka Francis Mbanusi — Backend Develo</div>per</title>
     <meta
       name="description"
-      content="Portfolio of Mbanusi (Francis) Ebuka, a software engineer specializing in web development with skills in HTML, CSS, JavaScript, and more."
+      content="Backend portfolio — Laravel, PHP, MySQL, AWS, Docker."
     />
-    <meta
-      name="keywords"
-      content="Mbanusi (Francis) Ebuka, software engineer, web developer, JavaScript, portfolio"
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
     />
-    <link rel="canonical" href="https://coder-frank.github.io" />
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Open Graph Meta Tags -->
-    <meta
-      property="og:title"
-      content="Mbanusi (Francis) Ebuka - Software Engineer"
-    />
-    <meta
-      property="og:description"
-      content="Discover the projects and skills of Mbanusi (Francis) Ebuka, a dedicated software engineer."
-    />
-    <meta
-      property="og:image"
-      content="https://coder-frank.github.io/assets/image/other/me.png"
-    />
-    <meta property="og:url" content="https://coder-frank.github.io" />
-    <meta property="og:type" content="website" />
+    <!-- ===== SEO & Social (paste inside <head>) ===== -->
+<link rel="canonical" href="https://coder-frank.github.io/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Mbanusi Ebuka Francis">
+<meta name="keywords" content="Backend Developer, Laravel, PHP, MySQL, Redis, AWS, Docker, REST APIs, Lagos, Nigeria">
+<meta name="description" content="Professional backend developer portfolio — Laravel, PHP, MySQL, AWS, Docker. View projects, resume, and contact.">
+<meta name="theme-color" content="#0b1220">
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@MbanusiF" />
-    <meta
-      name="twitter:title"
-      content="Mbanusi (Francis) Ebuka - Software Engineer"
-    />
-    <meta
-      name="twitter:description"
-      content="Check out my portfolio of software engineering projects."
-    />
-    <meta
-      name="twitter:image"
-      content="https://coder-frank.github.io/assets/image/other/me.png"
-    />
+<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="https://coder-frank.github.io/assets/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://coder-frank.github.io/assets/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://coder-frank.github.io/assets/icons/favicon-16x16.png">
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "Person",
-        "name": "Mbanusi (Francis) Ebuka",
-        "jobTitle": "Software Engineer",
-        "url": "https://coder-frank.github.io",
-        "sameAs": [
-          "https://www.linkedin.com/in/kcoder/",
-          "https://github.com/coder-frank",
-          "https://twitter.com/MbanusiF"
-        ]
-      }
+<!-- Open Graph (Facebook, LinkedIn, WhatsApp, Discord, Slack, Telegram) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Mbanusi Ebuka Francis — Backend Developer">
+<meta property="og:title" content="Backend Developer — Laravel, PHP, MySQL, AWS">
+<meta property="og:description" content="Production-grade backends: auth, payments, queues, dashboards, and DevOps.">
+<meta property="og:url" content="https://coder-frank.github.io/">
+<meta property="og:image" content="https://coder-frank.github.io/assets/share/og-image.jpg">
+<meta property="og:image:secure_url" content="https://coder-frank.github.io/assets/share/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mbanusi Ebuka Francis — Backend Developer">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mbanusi Ebuka Francis — Backend Developer">
+<meta name="twitter:description" content="Laravel, PHP, MySQL, AWS, Docker. View projects and contact.">
+<meta name="twitter:site" content="@mbanusiF">
+<meta name="twitter:creator" content="@mbanusiF">
+<meta name="twitter:image" content="https://coder-frank.github.io/assets/share/og-image.jpg">
+<meta name="twitter:image:alt" content="Mbanusi Ebuka Francis — Backend Developer">
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mbanusi Ebuka Francis",
+  "jobTitle": "Backend Developer",
+  "email": "mailto:frankemmanuel249@gmail.com",
+  "url": "https://coder-frank.github.io/",
+  "sameAs": [
+    "https://github.com/coder-frank",
+    "https://x.com/mbanusiF",
+    "https://www.linkedin.com/in/kcoder"
+  ],
+  "knowsAbout": ["Laravel", "PHP", "MySQL", "Redis", "AWS", "Docker", "APIs"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lagos",
+    "addressCountry": "NG"
+  },
+  "image": "https://coder-frank.github.io/assets/share/og-image.jpg"
+}
+</script>
+
+    <script>
+      try {
+        const gc = (n) =>
+          document.cookie
+            .split(";")
+            .map((c) => c.trim())
+            .find((c) => c.startsWith(n + "="))
+            ?.split("=")[1] || null;
+        let saved = localStorage.getItem("theme") || gc("theme") || "dark";
+        if (!["light", "dark"].includes(saved)) saved = "light";
+        document.documentElement.setAttribute("data-theme", saved);
+      } catch (e) {}
     </script>
-
-    <!-- Font Awesome for Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-      <div class="nav-container">
-        <div class="nav-brand">
-          <div class="brand-icon">
-            <i class="fas fa-code"></i>
+    <nav class="navbar navbar-expand-lg py-3 sticky-top glass">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#hero"
+          >Mbanusi<span class="dot">.</span>Ebuka</a
+        >
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbars"
+          aria-controls="navbars"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="d-lg-none ms-auto d-flex align-items-center gap-2">
+          <button
+            id="themeToggleMobile"
+            class="theme-toggle"
+            aria-label="Toggle theme"
+            title="Toggle light/dark"
+          >
+            <i class="fa-solid fa-sun icon-sun"></i
+            ><i class="fa-solid fa-moon icon-moon"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbars">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-lg-center gap-lg-3"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#certificates">Certificates</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="d-none d-lg-flex align-items-center gap-2 ms-lg-3">
+            <button
+              id="themeToggle"
+              class="theme-toggle"
+              aria-label="Toggle theme"
+              title="Toggle light/dark"
+            >
+              <i class="fa-solid fa-sun icon-sun"></i
+              ><i class="fa-solid fa-moon icon-moon"></i>
+            </button>
+            <button
+              class="btn btn-sm btn-primary px-3"
+              data-bs-toggle="modal"
+              data-bs-target="#resumeModal"
+            >
+              <i class="fa-solid fa-file-lines me-1"></i> View Resume
+            </button>
           </div>
-          <span>Kcoder</span>
-        </div>
-        <div class="nav-menu" id="nav-menu">
-          <a href="#about" class="nav-link">About</a>
-          <a href="#skills" class="nav-link">Skills</a>
-          <a href="#projects" class="nav-link">Projects</a>
-          <a href="#certificates" class="nav-link">Certificates</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </div>
-        <div class="nav-toggle" id="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
         </div>
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <br><br>
-    <section class="hero" id="hero">
-      <div class="hero-background">
-        <canvas id="particles-canvas"></canvas>
-      </div>
-      <div class="hero-content">
-        <div class="hero-image">
-          <img
-            src="assets/image/other/me.png"
-            alt="Mbanusi Ebuka Francis"
-            class="profile-img"
-          />
-          <div class="hero-badge">
-            <i class="fas fa-check-circle"></i>
-            <span>Available for Work</span>
+    <header id="hero" class="hero py-5 py-lg-5">
+      <div class="container py-lg-4">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="badge hero-tag rounded-pill px-3 py-2 mb-3"
+              ><i class="fa-solid fa-terminal me-2"></i> Backend Developer</span
+            >
+            <h1 class="display-5 fw-bolder">
+              Building reliable APIs & scalable systems with
+              <span class="underline">Laravel</span>,
+              <span class="underline">PHP</span>,
+              <span class="underline">MySQL</span>, and
+              <span class="underline">AWS</span>.
+            </h1>
+            <p class="lead mt-3 mb-4">
+              I design, build, and ship production-grade backends:
+              authentication, payments, file handling, dashboards, messaging,
+              queues, and DevOps — with clean architecture, strong security, and
+              great DX.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <button
+                class="btn btn-primary px-3"
+                data-bs-toggle="modal"
+                data-bs-target="#resumeModal"
+              >
+                <i class="fa-solid fa-file-lines me-2"></i>View Resume
+              </button>
+              <a href="#contact" class="btn btn-success px-3"
+                ><i class="fa-solid fa-paper-plane me-2"></i>Contact Me</a
+              >
+            </div>
+            <div class="d-flex flex-wrap gap-2 mt-4">
+              <span class="chip"
+                ><i class="fa-brands fa-php"></i><span>PHP 8.x</span></span
+              >
+              <span class="chip"
+                ><i class="fa-solid fa-database"></i
+                ><span>MySQL / Redis</span></span
+              >
+              <span class="chip"
+                ><i class="fa-brands fa-laravel"></i
+                ><span>Laravel 10/12</span></span
+              >
+              <span class="chip"
+                ><i class="fa-brands fa-aws"></i
+                ><span>AWS (EC2/RDS/S3)</span></span
+              >
+              <span class="chip"
+                ><i class="fa-brands fa-docker"></i><span>Docker</span></span
+              >
+              <span class="chip"
+                ><i class="fa-brands fa-git-alt"></i
+                ><span>GitHub Actions</span></span
+              >
+              <span class="chip"
+                ><i class="fa-brands fa-linux"></i><span>Linux</span></span
+              >
+            </div>
+          </div>
+          <div class="col-lg-5 d-flex flex-column align-items-center">
+            <div
+              class="hero-avatar"
+              role="img"
+              aria-label="Profile photo"
+            ></div>
+            <div class="row g-3 mt-1 w-100">
+              <div class="col-4">
+                <div class="card-pro p-3 text-center">
+                  <div class="fw-bold">7+</div>
+                  <div>Projects Live</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card-pro p-3 text-center">
+                  <div class="fw-bold">API</div>
+                  <div>First</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card-pro p-3 text-center">
+                  <div class="fw-bold">24/7</div>
+                  <div>Uptime minded</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <h1 class="hero-title">Mbanusi Ebuka Francis</h1>
-        <p class="hero-subtitle">Senior Backend Developer & API Architect</p>
-        <p class="hero-description">
-          Crafting scalable backend solutions and robust APIs with 5+ years of
-          experience in modern web technologies
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">
-            <i class="fas fa-envelope"></i>
-            Get In Touch
-          </a>
-          <a
-            href="assets/documents/resume.pdf"
-            class="btn btn-secondary"
-            download
-          >
-            <i class="fas fa-download"></i>
-            Download Resume
-          </a>
-        </div>
       </div>
-      <div class="scroll-indicator">
-        <div class="scroll-arrow"></div>
-      </div>
-    </section>
+    </header>
 
-    <!-- About Section -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">About Me</h2>
-          <p class="section-subtitle">
-            Passionate developer with a focus on creating exceptional digital
-            experiences
-          </p>
-        </div>
-        <div class="about-content">
-          <div class="about-text">
-            <div class="about-intro">
-              <p class="lead">
-                Welcome to my corner of the internet! My name is Mbanusi Ebuka
-                Francis, a 19-year-old passionate about coding and backend
-                development.
+    <main id="main">
+      <section id="about" class="py-5">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+              <h2 class="mb-3">About</h2>
+              <p class="mb-3">
+                I'm a backend developer focused on Laravel (PHP 8+),
+                MySQL/Redis, Docker, and AWS. I design robust APIs, payments and
+                webhooks, background workers, and CI/CD pipelines—with clean
+                architecture, security best‑practices, and solid monitoring.
+              </p>
+              <p class="mb-3">
+                I collaborate tightly with product and frontend to ship quickly
+                with quality — multi-tenant apps, payment flows, RBAC,
+                notifications, analytics, and reporting.
               </p>
             </div>
-            <p>
-              My journey began at 16 with HTML, evolving through CSS and
-              JavaScript, and deepening into PHP, MySQL, and Laravel. I thrive
-              on solving complex problems and building scalable backend systems,
-              particularly RESTful APIs.
-            </p>
-            <p>
-              Continuous learning drives me to deliver exceptional results and
-              push my boundaries with every project. I believe in writing clean,
-              maintainable code and following industry best practices.
-            </p>
-
-            <div class="about-highlights">
-              <div class="highlight-item">
-                <i class="fas fa-rocket"></i>
-                <div>
-                  <h4>Performance Focused</h4>
-                  <p>Optimizing applications for speed and scalability</p>
-                </div>
-              </div>
-              <div class="highlight-item">
-                <i class="fas fa-shield-alt"></i>
-                <div>
-                  <h4>Security First</h4>
-                  <p>Implementing robust security measures in all projects</p>
-                </div>
-              </div>
-              <div class="highlight-item">
-                <i class="fas fa-users"></i>
-                <div>
-                  <h4>Team Player</h4>
-                  <p>Collaborating effectively with cross-functional teams</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="about-sidebar">
-            <div class="stats-grid">
-              <div class="stat-card">
-                <div class="stat-icon">
-                  <i class="fas fa-calendar-alt"></i>
-                </div>
-                <div class="stat-content">
-                  <span class="stat-number">5+</span>
-                  <span class="stat-label">Years Experience</span>
-                </div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-icon">
-                  <i class="fas fa-project-diagram"></i>
-                </div>
-                <div class="stat-content">
-                  <span class="stat-number">15+</span>
-                  <span class="stat-label">Projects Completed</span>
-                </div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-icon">
-                  <i class="fas fa-code"></i>
-                </div>
-                <div class="stat-content">
-                  <span class="stat-number">8+</span>
-                  <span class="stat-label">Technologies</span>
-                </div>
-              </div>
-              <div class="stat-card">
-                <div class="stat-icon">
-                  <i class="fas fa-award"></i>
-                </div>
-                <div class="stat-content">
-                  <span class="stat-number">8</span>
-                  <span class="stat-label">Certifications</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="code-block">
-              <div class="code-header">
-                <div class="code-dots">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <span class="code-title">developer.php</span>
-              </div>
-              <div class="code-content">
-                <span class="code-line"
-                  ><span class="code-keyword">&lt;?php</span></span
-                >
-                <span class="code-line"
-                  ><span class="code-keyword">class</span>
-                  <span class="code-class">Developer</span> {</span
-                >
-                <span class="code-line">
-                  <span class="code-keyword">public</span>
-                  <span class="code-variable">$name</span> =
-                  <span class="code-string">'Mbanusi Ebuka Francis'</span
-                  >;</span
-                >
-                <span class="code-line">
-                  <span class="code-keyword">public</span>
-                  <span class="code-variable">$passion</span> =
-                  <span class="code-string">'Backend Development'</span>;</span
-                >
-                <span class="code-line">
-                  <span class="code-keyword">public</span>
-                  <span class="code-variable">$experience</span> =
-                  <span class="code-number">5</span>;</span
-                >
-                <span class="code-line">
-                  <span class="code-keyword">public</span>
-                  <span class="code-variable">$focus</span> =
-                  <span class="code-string">'API Architecture'</span>;</span
-                >
-                <span class="code-line">}</span>
+            <div class="col-lg-5">
+              <div class="card-pro p-4 h-100">
+                <h6 class="mb-3">Core Focus</h6>
+                <ul class="mb-0">
+                  <li>API design & documentation (OpenAPI/Swagger)</li>
+                  <li>Auth (Sanctum/Passport), roles & permissions</li>
+                  <li>Payments & webhooks (Stripe/Paystack/Flutterwave)</li>
+                  <li>Queues, jobs, schedulers, notifications (Mail/FCM)</li>
+                  <li>CI/CD, containers, monitoring (GH Actions, Docker)</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Skills Section -->
-    <section class="section section-alt" id="skills">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Skills & Technologies</h2>
-          <p class="section-subtitle">
-            A comprehensive toolkit for building modern web applications
-          </p>
-        </div>
-        <div class="skills-grid" id="skills-grid">
-          <!-- Skills will be populated by JavaScript -->
-        </div>
-      </div>
-    </section>
+      <section id="skills" class="py-5">
+        <div class="container">
+          <h2 class="mb-4">Skills</h2>
+          <div class="row g-3">
+            <div class="col-md-6 col-lg-4">
+              <div class="card-pro p-4">
+                <h6 class="mb-2">Languages</h6>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="chip"><i class="fa-brands fa-php"></i> PHP</span>
+                  <span class="chip"
+                    ><i class="fa-brands fa-python"></i> Python</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-brands fa-java"></i> Java</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-brands fa-js"></i> JavaScript</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-solid fa-database"></i> SQL</span
+                  >
+                </div>
+              </div>
+            </div>
 
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Featured Projects</h2>
-          <p class="section-subtitle">
-            A showcase of my recent work and technical expertise
-          </p>
-        </div>
-        <div class="projects-grid" id="projects-grid">
-          <!-- Projects will be populated by JavaScript -->
-        </div>
-      </div>
-    </section>
+            <div class="col-md-6 col-lg-4">
+              <div class="card-pro p-4">
+                <h6 class="mb-2">Frontend & Markup</h6>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="chip"
+                    ><i class="fa-brands fa-html5"></i> HTML5</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-brands fa-css3-alt"></i> CSS3</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-brands fa-bootstrap"></i> Bootstrap</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-solid fa-wand-magic-sparkles"></i> Tailwind
+                    CSS</span
+                  >
+                </div>
+              </div>
+            </div>
 
-    <!-- Certificates Section -->
-    <section class="section section-alt" id="certificates">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Certifications</h2>
-          <p class="section-subtitle">
-            Professional certifications and continuous learning achievements
-          </p>
-        </div>
-        <div class="certificates-grid" id="certificates-grid">
-          <!-- Certificates will be populated by JavaScript -->
-        </div>
-      </div>
-    </section>
+            <div class="col-md-6 col-lg-4">
+              <div class="card-pro p-4">
+                <h6 class="mb-2">Frameworks & Tools</h6>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="chip"
+                    ><i class="fa-brands fa-laravel"></i> Laravel</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-brands fa-docker"></i> Docker</span
+                  >
+                  <span class="chip"><i class="fa-brands fa-aws"></i> AWS</span>
+                  <span class="chip"
+                    ><i class="fa-brands fa-git-alt"></i> Git/GitHub</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-solid fa-cloud"></i> Nginx/Apache</span
+                  >
+                </div>
+              </div>
+            </div>
 
-    <!-- Contact Section -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Let's Connect</h2>
-          <p class="section-subtitle">
-            Ready to bring your next project to life? Let's discuss how we can
-            work together
-          </p>
+            <div class="col-md-6 col-lg-4">
+              <div class="card-pro p-4 h-100">
+                <h6 class="mb-2">Databases & Caching</h6>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="chip"
+                    ><i class="fa-solid fa-database"></i> MySQL/MariaDB</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-solid fa-bolt"></i> Redis</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-solid fa-layer-group"></i> Queues</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-solid fa-table"></i> Schema design</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="contact-content">
-          <div class="contact-info">
-            <div class="contact-card">
-              <h3>Get in touch</h3>
-              <p>
-                I'm always open to discussing new opportunities, interesting
-                projects, or just having a chat about technology and innovation.
-              </p>
+      </section>
 
-              <div class="contact-methods">
-                <div class="contact-item">
-                  <div class="contact-icon">
-                    <i class="fas fa-envelope"></i>
-                  </div>
-                  <div class="contact-details">
-                    <span class="contact-label">Email</span>
-                    <span class="contact-value"
-                      >frankemmanuel249@gmail.com</span
+      <section id="projects" class="py-5">
+        <div class="container">
+          <h2 class="mb-4">Selected Projects</h2>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <a href="#" class="card-pro text-decoration-none d-block h-100">
+                <div class="p-4">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <h6 class="mb-0">Adclickgo</h6>
+                    <span class="badge text-bg-info"
+                      >Laravel • MySQL • Redis</span
                     >
                   </div>
+                  <p class="mb-3">
+                    Ad tracking & affiliate links platform: campaign analytics,
+                    smart redirects, and payout workflows.
+                  </p>
+                  <div class="text-muted small">
+                    <i class="fa-solid fa-up-right-from-square me-1"></i
+                    >Overview
+                  </div>
                 </div>
-                <div class="contact-item">
-                  <div class="contact-icon">
-                    <i class="fas fa-phone"></i>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <a href="#" class="card-pro text-decoration-none d-block h-100">
+                <div class="p-4">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <h6 class="mb-0">KodaPay</h6>
+                    <span class="badge text-bg-info"
+                      >Laravel • Flutterwave • MySQL</span
+                    >
                   </div>
-                  <div class="contact-details">
-                    <span class="contact-label">Phone</span>
-                    <span class="contact-value">+234 907 119 5594</span>
+                  <p class="mb-3">
+                    Payment platform: invoicing, webhooks, settlements, and
+                    transaction monitoring via Flutterwave.
+                  </p>
+                  <div class="text-muted small">
+                    <i class="fa-solid fa-up-right-from-square me-1"></i
+                    >Overview
                   </div>
                 </div>
-                <div class="contact-item">
-                  <div class="contact-icon">
-                    <i class="fas fa-map-marker-alt"></i>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <a href="#" class="card-pro text-decoration-none d-block h-100">
+                <div class="p-4">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <h6 class="mb-0">StudyHub</h6>
+                    <span class="badge text-bg-info">Laravel • MySQL • AI</span>
                   </div>
-                  <div class="contact-details">
-                    <span class="contact-label">Location</span>
-                    <span class="contact-value">Nigeria</span>
+                  <p class="mb-3">
+                    Study platform: collaborative resources, notes, progress
+                    tracking, and an AI study assistant.
+                  </p>
+                  <div class="text-muted small">
+                    <i class="fa-solid fa-up-right-from-square me-1"></i
+                    >Overview
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <a href="#" class="card-pro text-decoration-none d-block h-100">
+                <div class="p-4">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <h6 class="mb-0">WipPay</h6>
+                    <span class="badge text-bg-info"
+                      >Laravel • Liminal API</span
+                    >
+                  </div>
+                  <p class="mb-3">
+                    Crypto gateway: address generation, secure webhooks,
+                    auto-sweep, fees, and withdrawal approvals.
+                  </p>
+                  <div class="text-muted small">
+                    <i class="fa-solid fa-up-right-from-square me-1"></i
+                    >Overview
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <a href="#" class="card-pro text-decoration-none d-block h-100">
+                <div class="p-4">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <h6 class="mb-0">ResalePlaza</h6>
+                    <span class="badge text-bg-info"
+                      >Laravel • MySQL • Redis</span
+                    >
+                  </div>
+                  <p class="mb-3">
+                    Multi-vendor e-commerce backend with wallet, escrow,
+                    disputes, and vendor order splitting.
+                  </p>
+                  <div class="text-muted small">
+                    <i class="fa-solid fa-up-right-from-square me-1"></i>Case
+                    Study
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <a href="#" class="card-pro text-decoration-none d-block h-100">
+                <div class="p-4">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <h6 class="mb-0">HostAm</h6>
+                    <span class="badge text-bg-info">Laravel • AWS S3</span>
+                  </div>
+                  <p class="mb-3">
+                    Static hosting platform: user projects, file manager, GitHub
+                    auth, and usage analytics.
+                  </p>
+                  <div class="text-muted small">
+                    <i class="fa-solid fa-up-right-from-square me-1"></i
+                    >Overview
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="certificates" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Certificates</h2>
+        <div id="certCarousel" class="carousel slide card-pro p-3" data-bs-ride="carousel" data-bs-interval="4500" data-bs-pause="hover">
+          <div class="carousel-indicators"><button type="button" data-bs-target="#certCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button></div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center">
+                <img src="assets/certificates/cert_1.png" class="d-block w-100" alt="Certificate 1" style="max-height:520px; object-fit:contain;">
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <img src="assets/certificates/cert_2.png" class="d-block w-100" alt="Certificate 2" style="max-height:520px; object-fit:contain;">
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+                <img src="assets/certificates/cert_3.png" class="d-block w-100" alt="Certificate 3" style="max-height:520px; object-fit:contain;">
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img src="assets/certificates/cert_4.png" class="d-block w-100" alt="Certificate 4" style="max-height:520px; object-fit:contain;">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img src="assets/certificates/cert_5.png" class="d-block w-100" alt="Certificate 5" style="max-height:520px; object-fit:contain;">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img src="assets/certificates/cert_6.png" class="d-block w-100" alt="Certificate 6" style="max-height:520px; object-fit:contain;">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img src="assets/certificates/cert_7.png" class="d-block w-100" alt="Certificate 7" style="max-height:520px; object-fit:contain;">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img src="assets/certificates/cert_8.png" class="d-block w-100" alt="Certificate 8" style="max-height:520px; object-fit:contain;">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img src="assets/certificates/cert_9.jpg" class="d-block w-100" alt="Certificate 9" style="max-height:520px; object-fit:contain;">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img src="assets/certificates/cert_10.jpg" class="d-block w-100" alt="Certificate 10" style="max-height:520px; object-fit:contain;">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img src="assets/certificates/cert_11.png" class="d-block w-100" alt="Certificate 11" style="max-height:520px; object-fit:contain;">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img src="assets/certificates/cert_12.png" class="d-block w-100" alt="Certificate 12" style="max-height:520px; object-fit:contain;">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img src="assets/certificates/cert_13.png" class="d-block w-100" alt="Certificate 13" style="max-height:520px; object-fit:contain;">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img src="assets/certificates/cert_14.png" class="d-block w-100" alt="Certificate 14" style="max-height:520px; object-fit:contain;">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img src="assets/certificates/cert_15.png" class="d-block w-100" alt="Certificate 15" style="max-height:520px; object-fit:contain;">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center">
+              <img src="assets/certificates/cert_16.png" class="d-block w-100" alt="Certificate 16" style="max-height:520px; object-fit:contain;">
+              </div>
+            </div></div>
+
+
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#certCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#certCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section> -->
+
+      <section id="experience" class="py-5">
+        <div class="container">
+          <h2 class="mb-4">Experience</h2>
+          <div class="card-pro p-4 mb-3">
+            <h6 class="mb-1">Freelance Backend Developer — Laravel & AWS</h6>
+            <div class="text-muted small mb-2">2021 — Present</div>
+            <ul class="mb-0">
+              <li>
+                Built REST APIs, auth, payments, queues, and reporting for
+                multiple products.
+              </li>
+              <li>
+                Set up CI/CD, containerized deployments, and monitoring on AWS.
+              </li>
+            </ul>
+          </div>
+          <div class="card-pro p-4 mb-3">
+            <h6 class="mb-1">
+              Founder / Backend Lead — ResalePlaza, HostAm, WipPay
+            </h6>
+            <div class="text-muted small mb-2">2023 — Present</div>
+            <ul class="mb-0">
+              <li>
+                Designed domain models, wallets, and admin panels with
+                role-based access.
+              </li>
+              <li>
+                Handled infra: SSL, backups, alerts, and zero-downtime deploys.
+              </li>
+            </ul>
+          </div>
+          <div class="card-pro p-4">
+            <h6 class="mb-1">
+              AI & Automation (Python) — MT5 & Data Pipelines
+            </h6>
+            <div class="text-muted small mb-2">2024 — Present</div>
+            <ul class="mb-0">
+              <li>
+                Integrated ML signals and news sentiment into automated trading
+                workflows.
+              </li>
+              <li>
+                Built Telegram bots and background schedulers for notifications.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-5">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-7">
+              <h2 class="mb-3">Let’s work together</h2>
+              <p class="mb-3">
+                Open to backend roles and contracts. Best fit: Laravel APIs,
+                payments, dashboards, and AWS infra.
+              </p>
+              <div class="d-flex flex-wrap gap-3 align-items-center">
+                <a
+                  href="mailto:frankemmanuel249@gmail.com"
+                  class="btn btn-danger px-3"
+                  ><i class="fa-solid fa-envelope me-2"></i>Email Me</a
+                >
+                <a
+                  href="https://github.com/coder-frank"
+                  class="btn btn-dark px-3"
+                  ><i class="fa-brands fa-github me-2"></i>GitHub</a
+                >
+                <a
+                  href="https://www.linkedin.com/in/kcoder"
+                  class="btn btn-primary px-3"
+                  ><i class="fa-brands fa-linkedin me-2"></i>LinkedIn</a
+                >
+              </div>
+              <p class="text-muted small mt-2 mb-0">Location: Lagos, NG</p>
+            </div>
+            <div class="col-lg-5">
+              <div class="card-pro p-4">
+                <h6 class="mb-3">Quick Stats</h6>
+                <div class="row g-3">
+                  <div class="col-6">
+                    <div class="card-pro p-3 text-center">
+                      <div class="fw-bold">Laravel</div>
+                      <div>10/12</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card-pro p-3 text-center">
+                      <div class="fw-bold">AWS</div>
+                      <div>EC2/RDS/S3</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card-pro p-3 text-center">
+                      <div class="fw-bold">CI/CD</div>
+                      <div>GH Actions</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card-pro p-3 text-center">
+                      <div class="fw-bold">DB</div>
+                      <div>MySQL/Redis</div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="social-section">
-            <h4>Connect with me</h4>
-            <div class="social-links">
-              <a
-                href="https://www.linkedin.com/in/kcoder/"
-                target="_blank"
-                class="social-link linkedin"
-              >
-                <i class="fab fa-linkedin-in"></i>
-                <span>LinkedIn</span>
-              </a>
-              <a
-                href="https://github.com/coder-frank"
-                target="_blank"
-                class="social-link github"
-              >
-                <i class="fab fa-github"></i>
-                <span>GitHub</span>
-              </a>
-              <a
-                href="https://x.com/MbanusiF"
-                target="_blank"
-                class="social-link twitter"
-              >
-                <i class="fab fa-twitter"></i>
-                <span>Twitter</span>
-              </a>
-              <a
-                href="https://wa.me/+2349071195594"
-                target="_blank"
-                class="social-link whatsapp"
-              >
-                <i class="fab fa-whatsapp"></i>
-                <span>WhatsApp</span>
-              </a>
-            </div>
-          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer py-4">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="small text-muted">
+          © <span id="year"></span> Ebuka Francis Mbanusi. All rights reserved.
+        </div>
+        <div class="d-flex gap-3">
+          <a href="#" aria-label="GitHub" href="https://github.com/coder-frank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="#"
+            aria-label="LinkedIn"
+            href="https://www.linkedin.com/in/kcoder"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="#" aria-label="Twitter" href="https://x.com/mbanusiF"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="back-to-top">
-      <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Certificate Modal -->
-    <div class="modal" id="certificate-modal">
-      <div class="modal-content">
-        <button class="modal-close">
-          <i class="fas fa-times"></i>
-        </button>
-        <img
-          id="certificate-image"
-          src="assets/image/other/code-typing-animate.svg"
-          alt="Certificate"
-        />
+    <div class="modal fade" id="resumeModal" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen-lg-down"
+      >
+        <div class="modal-content glass">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              <i class="fa-solid fa-file-lines me-2"></i>Resume — Ebuka Francis
+              Mbanusi
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0" style="height: 80vh">
+            <iframe
+              src="assets/Ebuka_Mbanusi_Resume.pdf"
+              title="Resume PDF"
+              style="width: 100%; height: 100%; border: 0"
+            ></iframe>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
-    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function setCookie(n, v, d) {
+        const t = new Date();
+        t.setTime(t.getTime() + d * 24 * 60 * 60 * 1e3);
+        document.cookie =
+          n + "=" + v + ";expires=" + t.toUTCString() + ";path=/";
+      }
+      function getCookie(n) {
+        const s = n + "=";
+        const ca = document.cookie.split(";");
+        for (let c of ca) {
+          c = c.trim();
+          if (c.indexOf(s) === 0) return c.substring(s.length);
+        }
+        return null;
+      }
+      const htmlEl = document.documentElement;
+      const toggles = [
+        document.getElementById("themeToggle"),
+        document.getElementById("themeToggleMobile"),
+      ];
+      function applyTheme(mode) {
+        htmlEl.setAttribute("data-theme", mode);
+        localStorage.setItem("theme", mode);
+        setCookie("theme", mode, 365);
+      }
+      (function () {
+        let saved =
+          localStorage.getItem("theme") || getCookie("theme") || "dark";
+        if (!["light", "dark"].includes(saved)) saved = "light";
+        applyTheme(saved);
+      })();
+      toggles.forEach((btn) => {
+        if (!btn) return;
+        btn.addEventListener("click", () => {
+          const mode =
+            htmlEl.getAttribute("data-theme") === "dark" ? "light" : "dark";
+          applyTheme(mode);
+        });
+      });
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+      (function () {
+        const cc = document.getElementById("certCarousel");
+        if (!cc) return;
+        const items = cc.querySelectorAll(".carousel-item");
+        const prev = cc.querySelector(".carousel-control-prev");
+        const next = cc.querySelector(".carousel-control-next");
+        if (items.length < 2) {
+          prev?.classList.add("d-none");
+          next?.classList.add("d-none");
+          const ind = cc.querySelector(".carousel-indicators");
+          ind?.classList.add("d-none");
+        }
+      })();
+    </script>
   </body>
 </html>
