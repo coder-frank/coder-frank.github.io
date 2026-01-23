@@ -57,7 +57,7 @@
   const copyBtn = document.getElementById("copyEmailBtn");
   if (copyBtn) {
     copyBtn.addEventListener("click", async () => {
-      const email = "ebuka.mbanusi@miva.edu.ng";
+      const email = "frankemmanuel249@gmail.com";
       try {
         await navigator.clipboard.writeText(email);
         const old = copyBtn.innerHTML;
