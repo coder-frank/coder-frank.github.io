@@ -1,18 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="light">
   <head>
-    <script src="js/script.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ebuka Francis Mbanusi — Backend Develo</div>per</title>
+
+    <title>Ebuka Francis Mbanusi — Backend Developer</title>
     <meta
       name="description"
-      content="Backend portfolio — Laravel, PHP, MySQL, AWS, Docker."
+      content="Backend Developer (Laravel/PHP/MySQL/AWS) + React Native. I build production-grade APIs, payments, queues, and scalable systems."
     />
+
+    <!-- SEO -->
+    <link rel="canonical" href="https://coder-frank.github.io/" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Mbanusi Ebuka Francis" />
+    <meta
+      name="keywords"
+      content="Backend Developer, Laravel, PHP, MySQL, Redis, AWS, Docker, REST APIs, React Native, Expo, CI/CD, Lagos, Nigeria"
+    />
+    <meta name="theme-color" content="#0b1220" />
+
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- CSS libs -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,68 +39,102 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
       rel="stylesheet"
     />
+
+    <!-- Your CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- ===== SEO & Social (paste inside <head>) ===== -->
-<link rel="canonical" href="https://coder-frank.github.io/">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Mbanusi Ebuka Francis">
-<meta name="keywords" content="Backend Developer, Laravel, PHP, MySQL, Redis, AWS, Docker, REST APIs, Lagos, Nigeria">
-<meta name="description" content="Professional backend developer portfolio — Laravel, PHP, MySQL, AWS, Docker. View projects, resume, and contact.">
-<meta name="theme-color" content="#0b1220">
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://coder-frank.github.io/assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://coder-frank.github.io/assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://coder-frank.github.io/assets/icons/favicon-16x16.png"
+    />
 
-<!-- Favicons -->
-<link rel="apple-touch-icon" sizes="180x180" href="https://coder-frank.github.io/assets/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://coder-frank.github.io/assets/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://coder-frank.github.io/assets/icons/favicon-16x16.png">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta
+      property="og:site_name"
+      content="Mbanusi Ebuka Francis — Backend Developer"
+    />
+    <meta
+      property="og:title"
+      content="Backend Developer — Laravel, PHP, MySQL, AWS + React Native"
+    />
+    <meta
+      property="og:description"
+      content="Production-grade backends + mobile apps: auth, payments, queues, webhooks, dashboards, CI/CD."
+    />
+    <meta property="og:url" content="https://coder-frank.github.io/" />
+    <meta
+      property="og:image"
+      content="https://coder-frank.github.io/assets/share/og-image.jpg"
+    />
 
-<!-- Open Graph (Facebook, LinkedIn, WhatsApp, Discord, Slack, Telegram) -->
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Mbanusi Ebuka Francis — Backend Developer">
-<meta property="og:title" content="Backend Developer — Laravel, PHP, MySQL, AWS">
-<meta property="og:description" content="Production-grade backends: auth, payments, queues, dashboards, and DevOps.">
-<meta property="og:url" content="https://coder-frank.github.io/">
-<meta property="og:image" content="https://coder-frank.github.io/assets/share/og-image.jpg">
-<meta property="og:image:secure_url" content="https://coder-frank.github.io/assets/share/og-image.jpg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Mbanusi Ebuka Francis — Backend Developer">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Mbanusi Ebuka Francis — Backend Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Laravel, PHP, MySQL, AWS, Docker + React Native (Expo). View projects and contact."
+    />
+    <meta name="twitter:site" content="@mbanusiF" />
+    <meta name="twitter:creator" content="@mbanusiF" />
+    <meta
+      name="twitter:image"
+      content="https://coder-frank.github.io/assets/share/og-image.jpg"
+    />
 
-<!-- Twitter Cards -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Mbanusi Ebuka Francis — Backend Developer">
-<meta name="twitter:description" content="Laravel, PHP, MySQL, AWS, Docker. View projects and contact.">
-<meta name="twitter:site" content="@mbanusiF">
-<meta name="twitter:creator" content="@mbanusiF">
-<meta name="twitter:image" content="https://coder-frank.github.io/assets/share/og-image.jpg">
-<meta name="twitter:image:alt" content="Mbanusi Ebuka Francis — Backend Developer">
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mbanusi Ebuka Francis",
+        "jobTitle": "Backend Developer",
+        "email": "mailto:ebuka.mbanusi@miva.edu.ng",
+        "url": "https://coder-frank.github.io/",
+        "sameAs": [
+          "https://github.com/coder-frank",
+          "https://x.com/mbanusiF",
+          "https://www.linkedin.com/in/kcoder"
+        ],
+        "knowsAbout": [
+          "Laravel",
+          "PHP",
+          "MySQL",
+          "Redis",
+          "AWS",
+          "Docker",
+          "APIs",
+          "CI/CD",
+          "React Native",
+          "Expo"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lagos",
+          "addressCountry": "NG"
+        }
+      }
+    </script>
 
-<!-- Structured Data (JSON-LD) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Mbanusi Ebuka Francis",
-  "jobTitle": "Backend Developer",
-  "email": "mailto:frankemmanuel249@gmail.com",
-  "url": "https://coder-frank.github.io/",
-  "sameAs": [
-    "https://github.com/coder-frank",
-    "https://x.com/mbanusiF",
-    "https://www.linkedin.com/in/kcoder"
-  ],
-  "knowsAbout": ["Laravel", "PHP", "MySQL", "Redis", "AWS", "Docker", "APIs"],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Lagos",
-    "addressCountry": "NG"
-  },
-  "image": "https://coder-frank.github.io/assets/share/og-image.jpg"
-}
-</script>
-
+    <!-- Theme bootstrap -->
     <script>
       try {
         const gc = (n) =>
@@ -95,29 +143,26 @@
             .map((c) => c.trim())
             .find((c) => c.startsWith(n + "="))
             ?.split("=")[1] || null;
+
         let saved = localStorage.getItem("theme") || gc("theme") || "dark";
         if (!["light", "dark"].includes(saved)) saved = "light";
         document.documentElement.setAttribute("data-theme", saved);
       } catch (e) {}
     </script>
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg py-3 sticky-top glass">
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg py-3 sticky-top glass nav-blur">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#hero"
-          >Mbanusi<span class="dot">.</span>Ebuka</a
+        <a
+          class="navbar-brand fw-bold d-flex align-items-center gap-2"
+          href="#hero"
         >
-        <button
-          class="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbars"
-          aria-controls="navbars"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <span class="brand-dot"></span>
+          <span>Mbanusi <span class="dot">.</span> Ebuka</span>
+        </a>
+
         <div class="d-lg-none ms-auto d-flex align-items-center gap-2">
           <button
             id="themeToggleMobile"
@@ -125,14 +170,25 @@
             aria-label="Toggle theme"
             title="Toggle light/dark"
           >
-            <i class="fa-solid fa-sun icon-sun"></i
-            ><i class="fa-solid fa-moon icon-moon"></i>
+            <i class="fa-solid fa-sun icon-sun"></i>
+            <i class="fa-solid fa-moon icon-moon"></i>
+          </button>
+
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbars"
+            aria-controls="navbars"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
           </button>
         </div>
+
         <div class="collapse navbar-collapse" id="navbars">
-          <ul
-            class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-lg-center gap-lg-3"
-          >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
             </li>
@@ -142,9 +198,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#projects">Projects</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#certificates">Certificates</a>
-            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#experience">Experience</a>
             </li>
@@ -152,6 +205,7 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
+
           <div class="d-none d-lg-flex align-items-center gap-2 ms-lg-3">
             <button
               id="themeToggle"
@@ -159,104 +213,164 @@
               aria-label="Toggle theme"
               title="Toggle light/dark"
             >
-              <i class="fa-solid fa-sun icon-sun"></i
-              ><i class="fa-solid fa-moon icon-moon"></i>
+              <i class="fa-solid fa-sun icon-sun"></i>
+              <i class="fa-solid fa-moon icon-moon"></i>
             </button>
+
             <button
               class="btn btn-sm btn-primary px-3"
               data-bs-toggle="modal"
               data-bs-target="#resumeModal"
             >
-              <i class="fa-solid fa-file-lines me-1"></i> View Resume
+              <i class="fa-solid fa-file-lines me-1"></i> Resume
             </button>
+
+            <a class="btn btn-sm btn-outline px-3" href="#contact">
+              <i class="fa-solid fa-paper-plane me-1"></i> Hire Me
+            </a>
           </div>
         </div>
       </div>
     </nav>
 
-    <header id="hero" class="hero py-5 py-lg-5">
-      <div class="container py-lg-4">
+    <!-- HERO -->
+    <header id="hero" class="hero py-5">
+      <div class="hero-bg"></div>
+      <div class="hero-orbs">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+      </div>
+
+      <div class="container py-lg-4 position-relative">
         <div class="row align-items-center g-4">
-          <div class="col-lg-7">
-            <span class="badge hero-tag rounded-pill px-3 py-2 mb-3"
-              ><i class="fa-solid fa-terminal me-2"></i> Backend Developer</span
-            >
+          <div class="col-lg-7" data-aos="fade-up" data-aos-duration="700">
+            <span class="badge hero-tag rounded-pill px-3 py-2 mb-3">
+              <i class="fa-solid fa-terminal me-2"></i> Backend + Mobile
+              Developer
+            </span>
+
             <h1 class="display-5 fw-bolder">
-              Building reliable APIs & scalable systems with
-              <span class="underline">Laravel</span>,
-              <span class="underline">PHP</span>,
-              <span class="underline">MySQL</span>, and
-              <span class="underline">AWS</span>.
+              I build <span class="underline">production APIs</span>,
+              <span class="underline">scalable systems</span> and
+              <span class="underline">React Native apps</span> that feel
+              premium.
             </h1>
+
             <p class="lead mt-3 mb-4">
-              I design, build, and ship production-grade backends:
-              authentication, payments, file handling, dashboards, messaging,
-              queues, and DevOps — with clean architecture, strong security, and
-              great DX.
+              Laravel backends (payments, queues, webhooks, RBAC, dashboards) +
+              mobile apps with React Native (Expo). Clean architecture, strong
+              security, and smooth UX.
             </p>
+
             <div class="d-flex flex-wrap gap-2">
               <button
                 class="btn btn-primary px-3"
                 data-bs-toggle="modal"
                 data-bs-target="#resumeModal"
               >
-                <i class="fa-solid fa-file-lines me-2"></i>View Resume
+                <i class="fa-solid fa-file-lines me-2"></i> View Resume
               </button>
-              <a href="#contact" class="btn btn-success px-3"
-                ><i class="fa-solid fa-paper-plane me-2"></i>Contact Me</a
+
+              <a href="#projects" class="btn btn-success px-3">
+                <i class="fa-solid fa-briefcase me-2"></i> See Projects
+              </a>
+
+              <button
+                id="copyEmailBtn"
+                class="btn btn-outline px-3"
+                type="button"
               >
+                <i class="fa-solid fa-copy me-2"></i> Copy Email
+              </button>
             </div>
-            <div class="d-flex flex-wrap gap-2 mt-4">
-              <span class="chip"
-                ><i class="fa-brands fa-php"></i><span>PHP 8.x</span></span
-              >
-              <span class="chip"
-                ><i class="fa-solid fa-database"></i
-                ><span>MySQL / Redis</span></span
-              >
-              <span class="chip"
-                ><i class="fa-brands fa-laravel"></i
-                ><span>Laravel 10/12</span></span
-              >
-              <span class="chip"
-                ><i class="fa-brands fa-aws"></i
-                ><span>AWS (EC2/RDS/S3)</span></span
-              >
-              <span class="chip"
-                ><i class="fa-brands fa-docker"></i><span>Docker</span></span
-              >
-              <span class="chip"
-                ><i class="fa-brands fa-git-alt"></i
-                ><span>GitHub Actions</span></span
-              >
-              <span class="chip"
-                ><i class="fa-brands fa-linux"></i><span>Linux</span></span
-              >
+
+            <div class="trustbar mt-4">
+              <div class="trust-item">
+                <i class="fa-brands fa-laravel"></i> Laravel 10/12
+              </div>
+              <div class="trust-item">
+                <i class="fa-solid fa-database"></i> MySQL / Redis
+              </div>
+              <div class="trust-item"><i class="fa-brands fa-aws"></i> AWS</div>
+              <div class="trust-item">
+                <i class="fa-brands fa-docker"></i> Docker
+              </div>
+              <div class="trust-item">
+                <i class="fa-brands fa-react"></i> React Native
+              </div>
+              <div class="trust-item">
+                <i class="fa-solid fa-mobile-screen-button"></i> Expo
+              </div>
             </div>
           </div>
-          <div class="col-lg-5 d-flex flex-column align-items-center">
+
+          <div
+            class="col-lg-5 d-flex flex-column align-items-center"
+            data-aos="fade-up"
+            data-aos-duration="950"
+          >
             <div
               class="hero-avatar"
               role="img"
               aria-label="Profile photo"
             ></div>
-            <div class="row g-3 mt-1 w-100">
+
+            <div class="row g-3 mt-3 w-100">
               <div class="col-4">
-                <div class="card-pro p-3 text-center">
-                  <div class="fw-bold">7+</div>
-                  <div>Projects Live</div>
+                <div class="stat-card text-center">
+                  <div class="stat-value">7+</div>
+                  <div class="stat-label">Live Products</div>
                 </div>
               </div>
               <div class="col-4">
-                <div class="card-pro p-3 text-center">
-                  <div class="fw-bold">API</div>
-                  <div>First</div>
+                <div class="stat-card text-center">
+                  <div class="stat-value">API</div>
+                  <div class="stat-label">First Dev</div>
                 </div>
               </div>
               <div class="col-4">
-                <div class="card-pro p-3 text-center">
-                  <div class="fw-bold">24/7</div>
-                  <div>Uptime minded</div>
+                <div class="stat-card text-center">
+                  <div class="stat-value">Mobile</div>
+                  <div class="stat-label">React Native</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-mini mt-3 w-100">
+              <div class="mini-row">
+                <div class="mini-pill">
+                  <i class="fa-solid fa-shield-halved"></i> Security-minded
+                </div>
+                <div class="mini-pill">
+                  <i class="fa-solid fa-gauge-high"></i> Performance
+                </div>
+                <div class="mini-pill">
+                  <i class="fa-solid fa-diagram-project"></i> Clean architecture
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-badges mt-3 w-100">
+              <div class="badge-card">
+                <div class="badge-icon"><i class="fa-solid fa-plug"></i></div>
+                <div>
+                  <div class="badge-title">Webhooks</div>
+                  <div class="badge-sub">Verified + secure</div>
+                </div>
+              </div>
+              <div class="badge-card">
+                <div class="badge-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div>
+                  <div class="badge-title">Queues</div>
+                  <div class="badge-sub">Workers + retry</div>
+                </div>
+              </div>
+              <div class="badge-card">
+                <div class="badge-icon"><i class="fa-brands fa-react"></i></div>
+                <div>
+                  <div class="badge-title">React Native</div>
+                  <div class="badge-sub">Expo + API</div>
                 </div>
               </div>
             </div>
@@ -266,32 +380,34 @@
     </header>
 
     <main id="main">
-      <section id="about" class="py-5">
+      <!-- ABOUT -->
+      <section id="about" class="py-5 section">
         <div class="container">
           <div class="row align-items-center g-4">
-            <div class="col-lg-7">
+            <div class="col-lg-7" data-aos="fade-up">
               <h2 class="mb-3">About</h2>
               <p class="mb-3">
-                I'm a backend developer focused on Laravel (PHP 8+),
-                MySQL/Redis, Docker, and AWS. I design robust APIs, payments and
-                webhooks, background workers, and CI/CD pipelines—with clean
-                architecture, security best‑practices, and solid monitoring.
+                I’m Ebuka Francis Mbanusi — a backend developer focused on
+                Laravel (PHP 8+), MySQL/Redis, Docker, and AWS. I build robust
+                APIs, payment flows & webhooks, background workers, and CI/CD
+                pipelines with strong security and clean maintainable code.
               </p>
-              <p class="mb-3">
-                I collaborate tightly with product and frontend to ship quickly
-                with quality — multi-tenant apps, payment flows, RBAC,
-                notifications, analytics, and reporting.
+              <p class="mb-0">
+                I also build mobile apps with React Native (Expo), connecting
+                seamlessly to Laravel APIs for auth, wallet flows,
+                notifications, and realtime updates.
               </p>
             </div>
-            <div class="col-lg-5">
-              <div class="card-pro p-4 h-100">
+
+            <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-pro p-4 h-100 glow-card">
                 <h6 class="mb-3">Core Focus</h6>
-                <ul class="mb-0">
-                  <li>API design & documentation (OpenAPI/Swagger)</li>
+                <ul class="list-check mb-0">
+                  <li>API design & docs (OpenAPI/Swagger)</li>
                   <li>Auth (Sanctum/Passport), roles & permissions</li>
-                  <li>Payments & webhooks (Stripe/Paystack/Flutterwave)</li>
+                  <li>Payments & webhooks (Paystack/Flutterwave/Stripe)</li>
                   <li>Queues, jobs, schedulers, notifications (Mail/FCM)</li>
-                  <li>CI/CD, containers, monitoring (GH Actions, Docker)</li>
+                  <li>Mobile apps (React Native + Expo)</li>
                 </ul>
               </div>
             </div>
@@ -299,20 +415,32 @@
         </div>
       </section>
 
-      <section id="skills" class="py-5">
+      <!-- SKILLS -->
+      <section id="skills" class="py-5 section">
         <div class="container">
-          <h2 class="mb-4">Skills</h2>
+          <div
+            class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-4"
+          >
+            <div>
+              <h2 class="mb-1">Skills</h2>
+              <p class="text-muted mb-0">
+                Backend + DevOps + Mobile — end-to-end product engineering.
+              </p>
+            </div>
+            <div class="text-muted small">
+              <i class="fa-solid fa-circle-check me-1"></i> Clean systems, fast
+              shipping, strong security
+            </div>
+          </div>
+
           <div class="row g-3">
-            <div class="col-md-6 col-lg-4">
-              <div class="card-pro p-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up">
+              <div class="card-pro p-4 h-100">
                 <h6 class="mb-2">Languages</h6>
                 <div class="d-flex flex-wrap gap-2">
                   <span class="chip"><i class="fa-brands fa-php"></i> PHP</span>
                   <span class="chip"
                     ><i class="fa-brands fa-python"></i> Python</span
-                  >
-                  <span class="chip"
-                    ><i class="fa-brands fa-java"></i> Java</span
                   >
                   <span class="chip"
                     ><i class="fa-brands fa-js"></i> JavaScript</span
@@ -324,49 +452,59 @@
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
-              <div class="card-pro p-4">
-                <h6 class="mb-2">Frontend & Markup</h6>
-                <div class="d-flex flex-wrap gap-2">
-                  <span class="chip"
-                    ><i class="fa-brands fa-html5"></i> HTML5</span
-                  >
-                  <span class="chip"
-                    ><i class="fa-brands fa-css3-alt"></i> CSS3</span
-                  >
-                  <span class="chip"
-                    ><i class="fa-brands fa-bootstrap"></i> Bootstrap</span
-                  >
-                  <span class="chip"
-                    ><i class="fa-solid fa-wand-magic-sparkles"></i> Tailwind
-                    CSS</span
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-              <div class="card-pro p-4">
-                <h6 class="mb-2">Frameworks & Tools</h6>
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <div class="card-pro p-4 h-100">
+                <h6 class="mb-2">Backend</h6>
                 <div class="d-flex flex-wrap gap-2">
                   <span class="chip"
                     ><i class="fa-brands fa-laravel"></i> Laravel</span
                   >
                   <span class="chip"
-                    ><i class="fa-brands fa-docker"></i> Docker</span
-                  >
-                  <span class="chip"><i class="fa-brands fa-aws"></i> AWS</span>
-                  <span class="chip"
-                    ><i class="fa-brands fa-git-alt"></i> Git/GitHub</span
+                    ><i class="fa-solid fa-key"></i> Auth/RBAC</span
                   >
                   <span class="chip"
-                    ><i class="fa-solid fa-cloud"></i> Nginx/Apache</span
+                    ><i class="fa-solid fa-bolt"></i> Queues</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-solid fa-plug"></i> Webhooks</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-solid fa-shield-halved"></i> Security</span
                   >
                 </div>
               </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="card-pro p-4 h-100">
+                <h6 class="mb-2">Infra & DevOps</h6>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="chip"><i class="fa-brands fa-aws"></i> AWS</span>
+                  <span class="chip"
+                    ><i class="fa-brands fa-docker"></i> Docker</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-brands fa-git-alt"></i> GitHub Actions</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-solid fa-server"></i> Nginx/Apache</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-brands fa-linux"></i> Linux</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4" data-aos="fade-up">
               <div class="card-pro p-4 h-100">
                 <h6 class="mb-2">Databases & Caching</h6>
                 <div class="d-flex flex-wrap gap-2">
@@ -377,10 +515,59 @@
                     ><i class="fa-solid fa-bolt"></i> Redis</span
                   >
                   <span class="chip"
-                    ><i class="fa-solid fa-layer-group"></i> Queues</span
+                    ><i class="fa-solid fa-layer-group"></i> Schema Design</span
                   >
                   <span class="chip"
-                    ><i class="fa-solid fa-table"></i> Schema design</span
+                    ><i class="fa-solid fa-chart-line"></i> Reporting</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <div class="card-pro p-4 h-100">
+                <h6 class="mb-2">Mobile (React Native)</h6>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="chip"
+                    ><i class="fa-brands fa-react"></i> React Native</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-solid fa-mobile-screen-button"></i> Expo</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-solid fa-route"></i> Navigation</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-solid fa-wifi"></i> API Integration</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="card-pro p-4 h-100">
+                <h6 class="mb-2">Frontend (support)</h6>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="chip"
+                    ><i class="fa-brands fa-html5"></i> HTML</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-brands fa-css3-alt"></i> CSS</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-brands fa-bootstrap"></i> Bootstrap</span
+                  >
+                  <span class="chip"
+                    ><i class="fa-solid fa-wand-magic-sparkles"></i> UI
+                    Polish</span
                   >
                 </div>
               </div>
@@ -389,358 +576,542 @@
         </div>
       </section>
 
-      <section id="projects" class="py-5">
+      <!-- PROJECTS -->
+      <section id="projects" class="py-5 section">
         <div class="container">
-          <h2 class="mb-4">Selected Projects</h2>
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-              <a href="#" class="card-pro text-decoration-none d-block h-100">
+          <div
+            class="d-flex align-items-end justify-content-between flex-wrap gap-2 mb-3"
+          >
+            <div>
+              <h2 class="mb-1">Selected Projects</h2>
+              <p class="text-muted mb-0">
+                Clickable cards • filters • details modal • clean layout.
+              </p>
+            </div>
+
+            <div class="project-filters">
+              <button class="filter-btn active" data-filter="all" type="button">
+                All
+              </button>
+              <button class="filter-btn" data-filter="fintech" type="button">
+                Fintech
+              </button>
+              <button class="filter-btn" data-filter="saas" type="button">
+                SaaS
+              </button>
+              <button class="filter-btn" data-filter="ecom" type="button">
+                E-commerce
+              </button>
+              <button class="filter-btn" data-filter="mobile" type="button">
+                Mobile
+              </button>
+              <button class="filter-btn" data-filter="ai" type="button">
+                AI
+              </button>
+            </div>
+          </div>
+
+          <div class="row g-4" id="projectGrid">
+            <!-- GatePass -->
+            <div
+              class="col-md-6 col-lg-4 project-item"
+              data-tags="saas fintech"
+              data-aos="fade-up"
+            >
+              <div class="card-pro project-card h-100">
                 <div class="p-4">
                   <div
-                    class="d-flex justify-content-between align-items-center mb-2"
+                    class="d-flex justify-content-between align-items-start gap-2 mb-2"
+                  >
+                    <h6 class="mb-0">GatePass.ng</h6>
+                    <span class="badge tech-badge"
+                      >Tickets • QR • Analytics</span
+                    >
+                  </div>
+                  <p class="mb-3">
+                    Event ticketing backend: event pages, secure payments, QR
+                    code issuance, check-ins, and analytics dashboard.
+                  </p>
+
+                  <div class="meta-row">
+                    <span class="meta-pill"
+                      ><i class="fa-brands fa-laravel"></i> Laravel</span
+                    >
+                    <span class="meta-pill"
+                      ><i class="fa-solid fa-database"></i> MySQL</span
+                    >
+                    <span class="meta-pill"
+                      ><i class="fa-solid fa-plug"></i> Webhooks</span
+                    >
+                  </div>
+
+                  <div class="project-actions">
+                    <a
+                      href="https://gatepass.ng"
+                      target="_blank"
+                      rel="noopener"
+                      class="btn btn-sm btn-outline"
+                    >
+                      <i class="fa-solid fa-up-right-from-square me-1"></i>
+                      Visit
+                    </a>
+                    <button
+                      class="btn btn-sm btn-primary"
+                      data-project="gatepass"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                      type="button"
+                    >
+                      <i class="fa-solid fa-circle-info me-1"></i> Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- React Native Project -->
+            <div
+              class="col-md-6 col-lg-4 project-item"
+              data-tags="mobile saas"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <div class="card-pro project-card h-100">
+                <div class="p-4">
+                  <div
+                    class="d-flex justify-content-between align-items-start gap-2 mb-2"
+                  >
+                    <h6 class="mb-0">WipPay Mobile (React Native)</h6>
+                    <span class="badge tech-badge">Expo • API • Wallet</span>
+                  </div>
+                  <p class="mb-3">
+                    React Native (Expo) app integrated with a Laravel API: auth,
+                    wallet/deposit flow, withdrawals, notifications, and clean
+                    UI screens.
+                  </p>
+
+                  <div class="meta-row">
+                    <span class="meta-pill"
+                      ><i class="fa-brands fa-react"></i> React Native</span
+                    >
+                    <span class="meta-pill"
+                      ><i class="fa-solid fa-mobile-screen-button"></i>
+                      Expo</span
+                    >
+                    <span class="meta-pill"
+                      ><i class="fa-solid fa-wifi"></i> API</span
+                    >
+                  </div>
+
+                  <div class="project-actions">
+                    <a
+                      href="https://coder-frank.github.io"
+                      target="_blank"
+                      rel="noopener"
+                      class="btn btn-sm btn-outline"
+                    >
+                      <i class="fa-solid fa-up-right-from-square me-1"></i>
+                      Preview
+                    </a>
+                    <button
+                      class="btn btn-sm btn-primary"
+                      data-project="wippay_mobile"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                      type="button"
+                    >
+                      <i class="fa-solid fa-circle-info me-1"></i> Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Adclickgo -->
+            <div
+              class="col-md-6 col-lg-4 project-item"
+              data-tags="saas"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="card-pro project-card h-100">
+                <div class="p-4">
+                  <div
+                    class="d-flex justify-content-between align-items-start gap-2 mb-2"
                   >
                     <h6 class="mb-0">Adclickgo</h6>
-                    <span class="badge text-bg-info"
-                      >Laravel • MySQL • Redis</span
+                    <span class="badge tech-badge">Tracking • Analytics</span>
+                  </div>
+                  <p class="mb-3">
+                    Ad tracking platform: campaign analytics, smart redirects,
+                    and payout workflows with caching for speed.
+                  </p>
+
+                  <div class="meta-row">
+                    <span class="meta-pill"
+                      ><i class="fa-brands fa-laravel"></i> Laravel</span
+                    >
+                    <span class="meta-pill"
+                      ><i class="fa-solid fa-bolt"></i> Redis</span
+                    >
+                    <span class="meta-pill"
+                      ><i class="fa-solid fa-chart-line"></i> Reports</span
                     >
                   </div>
-                  <p class="mb-3">
-                    Ad tracking & affiliate links platform: campaign analytics,
-                    smart redirects, and payout workflows.
-                  </p>
-                  <div class="text-muted small">
-                    <i class="fa-solid fa-up-right-from-square me-1"></i
-                    >Overview
-                  </div>
-                </div>
-              </a>
-            </div>
 
-            <div class="col-md-6 col-lg-4">
-              <a href="#" class="card-pro text-decoration-none d-block h-100">
-                <div class="p-4">
-                  <div
-                    class="d-flex justify-content-between align-items-center mb-2"
-                  >
-                    <h6 class="mb-0">KodaPay</h6>
-                    <span class="badge text-bg-info"
-                      >Laravel • Flutterwave • MySQL</span
+                  <div class="project-actions">
+                    <a href="#" class="btn btn-sm btn-outline">
+                      <i class="fa-solid fa-up-right-from-square me-1"></i>
+                      Overview
+                    </a>
+                    <button
+                      class="btn btn-sm btn-primary"
+                      data-project="adclickgo"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                      type="button"
                     >
-                  </div>
-                  <p class="mb-3">
-                    Payment platform: invoicing, webhooks, settlements, and
-                    transaction monitoring via Flutterwave.
-                  </p>
-                  <div class="text-muted small">
-                    <i class="fa-solid fa-up-right-from-square me-1"></i
-                    >Overview
+                      <i class="fa-solid fa-circle-info me-1"></i> Details
+                    </button>
                   </div>
                 </div>
-              </a>
+              </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
-              <a href="#" class="card-pro text-decoration-none d-block h-100">
+            <!-- ResalePlaza -->
+            <div
+              class="col-md-6 col-lg-4 project-item"
+              data-tags="ecom saas"
+              data-aos="fade-up"
+            >
+              <div class="card-pro project-card h-100">
                 <div class="p-4">
                   <div
-                    class="d-flex justify-content-between align-items-center mb-2"
-                  >
-                    <h6 class="mb-0">StudyHub</h6>
-                    <span class="badge text-bg-info">Laravel • MySQL • AI</span>
-                  </div>
-                  <p class="mb-3">
-                    Study platform: collaborative resources, notes, progress
-                    tracking, and an AI study assistant.
-                  </p>
-                  <div class="text-muted small">
-                    <i class="fa-solid fa-up-right-from-square me-1"></i
-                    >Overview
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-              <a href="#" class="card-pro text-decoration-none d-block h-100">
-                <div class="p-4">
-                  <div
-                    class="d-flex justify-content-between align-items-center mb-2"
-                  >
-                    <h6 class="mb-0">WipPay</h6>
-                    <span class="badge text-bg-info"
-                      >Laravel • Liminal API</span
-                    >
-                  </div>
-                  <p class="mb-3">
-                    Crypto gateway: address generation, secure webhooks,
-                    auto-sweep, fees, and withdrawal approvals.
-                  </p>
-                  <div class="text-muted small">
-                    <i class="fa-solid fa-up-right-from-square me-1"></i
-                    >Overview
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-md-6 col-lg-4">
-              <a href="#" class="card-pro text-decoration-none d-block h-100">
-                <div class="p-4">
-                  <div
-                    class="d-flex justify-content-between align-items-center mb-2"
+                    class="d-flex justify-content-between align-items-start gap-2 mb-2"
                   >
                     <h6 class="mb-0">ResalePlaza</h6>
-                    <span class="badge text-bg-info"
-                      >Laravel • MySQL • Redis</span
+                    <span class="badge tech-badge">Escrow • Multi-vendor</span>
+                  </div>
+                  <p class="mb-3">
+                    Multi-vendor commerce backend with wallet escrow, disputes,
+                    vendor order splitting, and admin verification.
+                  </p>
+
+                  <div class="meta-row">
+                    <span class="meta-pill"
+                      ><i class="fa-brands fa-laravel"></i> Laravel</span
+                    >
+                    <span class="meta-pill"
+                      ><i class="fa-solid fa-bolt"></i> Redis</span
+                    >
+                    <span class="meta-pill"
+                      ><i class="fa-solid fa-user-shield"></i> RBAC</span
                     >
                   </div>
-                  <p class="mb-3">
-                    Multi-vendor e-commerce backend with wallet, escrow,
-                    disputes, and vendor order splitting.
-                  </p>
-                  <div class="text-muted small">
-                    <i class="fa-solid fa-up-right-from-square me-1"></i>Case
-                    Study
+
+                  <div class="project-actions">
+                    <a href="#" class="btn btn-sm btn-outline">
+                      <i class="fa-solid fa-layer-group me-1"></i> Case Study
+                    </a>
+                    <button
+                      class="btn btn-sm btn-primary"
+                      data-project="resaleplaza"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                      type="button"
+                    >
+                      <i class="fa-solid fa-circle-info me-1"></i> Details
+                    </button>
                   </div>
                 </div>
-              </a>
+              </div>
             </div>
 
-            <div class="col-md-6 col-lg-4">
-              <a href="#" class="card-pro text-decoration-none d-block h-100">
+            <!-- HostAm -->
+            <div
+              class="col-md-6 col-lg-4 project-item"
+              data-tags="saas"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <div class="card-pro project-card h-100">
                 <div class="p-4">
                   <div
-                    class="d-flex justify-content-between align-items-center mb-2"
+                    class="d-flex justify-content-between align-items-start gap-2 mb-2"
                   >
                     <h6 class="mb-0">HostAm</h6>
-                    <span class="badge text-bg-info">Laravel • AWS S3</span>
+                    <span class="badge tech-badge">Hosting • File Manager</span>
                   </div>
                   <p class="mb-3">
-                    Static hosting platform: user projects, file manager, GitHub
-                    auth, and usage analytics.
+                    Static hosting platform: projects, modern file manager,
+                    GitHub OAuth, and usage analytics.
                   </p>
-                  <div class="text-muted small">
-                    <i class="fa-solid fa-up-right-from-square me-1"></i
-                    >Overview
+
+                  <div class="meta-row">
+                    <span class="meta-pill"
+                      ><i class="fa-brands fa-laravel"></i> Laravel</span
+                    >
+                    <span class="meta-pill"
+                      ><i class="fa-brands fa-aws"></i> S3</span
+                    >
+                    <span class="meta-pill"
+                      ><i class="fa-brands fa-github"></i> OAuth</span
+                    >
+                  </div>
+
+                  <div class="project-actions">
+                    <a href="#" class="btn btn-sm btn-outline">
+                      <i class="fa-solid fa-up-right-from-square me-1"></i>
+                      Overview
+                    </a>
+                    <button
+                      class="btn btn-sm btn-primary"
+                      data-project="hostam"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                      type="button"
+                    >
+                      <i class="fa-solid fa-circle-info me-1"></i> Details
+                    </button>
                   </div>
                 </div>
-              </a>
+              </div>
+            </div>
+
+            <!-- StudyHub -->
+            <div
+              class="col-md-6 col-lg-4 project-item"
+              data-tags="ai saas"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="card-pro project-card h-100">
+                <div class="p-4">
+                  <div
+                    class="d-flex justify-content-between align-items-start gap-2 mb-2"
+                  >
+                    <h6 class="mb-0">StudyHub</h6>
+                    <span class="badge tech-badge">AI • Learning</span>
+                  </div>
+                  <p class="mb-3">
+                    Study platform: resources, notes, progress tracking, and an
+                    AI study assistant to generate learning flows.
+                  </p>
+
+                  <div class="meta-row">
+                    <span class="meta-pill"
+                      ><i class="fa-brands fa-laravel"></i> Laravel</span
+                    >
+                    <span class="meta-pill"
+                      ><i class="fa-solid fa-robot"></i> AI</span
+                    >
+                    <span class="meta-pill"
+                      ><i class="fa-solid fa-envelope"></i> Emails</span
+                    >
+                  </div>
+
+                  <div class="project-actions">
+                    <a href="#" class="btn btn-sm btn-outline">
+                      <i class="fa-solid fa-up-right-from-square me-1"></i>
+                      Overview
+                    </a>
+                    <button
+                      class="btn btn-sm btn-primary"
+                      data-project="studyhub"
+                      data-bs-toggle="modal"
+                      data-bs-target="#projectModal"
+                      type="button"
+                    >
+                      <i class="fa-solid fa-circle-info me-1"></i> Details
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- <section id="certificates" class="py-5">
-      <div class="container">
-        <h2 class="mb-4">Certificates</h2>
-        <div id="certCarousel" class="carousel slide card-pro p-3" data-bs-ride="carousel" data-bs-interval="4500" data-bs-pause="hover">
-          <div class="carousel-indicators"><button type="button" data-bs-target="#certCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button></div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="d-flex justify-content-center">
-                <img src="assets/certificates/cert_1.png" class="d-block w-100" alt="Certificate 1" style="max-height:520px; object-fit:contain;">
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-                <img src="assets/certificates/cert_2.png" class="d-block w-100" alt="Certificate 2" style="max-height:520px; object-fit:contain;">
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-                <img src="assets/certificates/cert_3.png" class="d-block w-100" alt="Certificate 3" style="max-height:520px; object-fit:contain;">
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-              <img src="assets/certificates/cert_4.png" class="d-block w-100" alt="Certificate 4" style="max-height:520px; object-fit:contain;">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-              <img src="assets/certificates/cert_5.png" class="d-block w-100" alt="Certificate 5" style="max-height:520px; object-fit:contain;">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-              <img src="assets/certificates/cert_6.png" class="d-block w-100" alt="Certificate 6" style="max-height:520px; object-fit:contain;">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-              <img src="assets/certificates/cert_7.png" class="d-block w-100" alt="Certificate 7" style="max-height:520px; object-fit:contain;">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-              <img src="assets/certificates/cert_8.png" class="d-block w-100" alt="Certificate 8" style="max-height:520px; object-fit:contain;">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-              <img src="assets/certificates/cert_9.jpg" class="d-block w-100" alt="Certificate 9" style="max-height:520px; object-fit:contain;">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-              <img src="assets/certificates/cert_10.jpg" class="d-block w-100" alt="Certificate 10" style="max-height:520px; object-fit:contain;">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-              <img src="assets/certificates/cert_11.png" class="d-block w-100" alt="Certificate 11" style="max-height:520px; object-fit:contain;">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-              <img src="assets/certificates/cert_12.png" class="d-block w-100" alt="Certificate 12" style="max-height:520px; object-fit:contain;">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-              <img src="assets/certificates/cert_13.png" class="d-block w-100" alt="Certificate 13" style="max-height:520px; object-fit:contain;">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-              <img src="assets/certificates/cert_14.png" class="d-block w-100" alt="Certificate 14" style="max-height:520px; object-fit:contain;">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-              <img src="assets/certificates/cert_15.png" class="d-block w-100" alt="Certificate 15" style="max-height:520px; object-fit:contain;">
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="d-flex justify-content-center">
-              <img src="assets/certificates/cert_16.png" class="d-block w-100" alt="Certificate 16" style="max-height:520px; object-fit:contain;">
-              </div>
-            </div></div>
-
-
-
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#certCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#certCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </section> -->
-
-      <section id="experience" class="py-5">
+      <!-- EXPERIENCE -->
+      <section id="experience" class="py-5 section">
         <div class="container">
           <h2 class="mb-4">Experience</h2>
-          <div class="card-pro p-4 mb-3">
-            <h6 class="mb-1">Freelance Backend Developer — Laravel & AWS</h6>
-            <div class="text-muted small mb-2">2021 — Present</div>
-            <ul class="mb-0">
-              <li>
-                Built REST APIs, auth, payments, queues, and reporting for
-                multiple products.
-              </li>
-              <li>
-                Set up CI/CD, containerized deployments, and monitoring on AWS.
-              </li>
-            </ul>
-          </div>
-          <div class="card-pro p-4 mb-3">
-            <h6 class="mb-1">
-              Founder / Backend Lead — ResalePlaza, HostAm, WipPay
-            </h6>
-            <div class="text-muted small mb-2">2023 — Present</div>
-            <ul class="mb-0">
-              <li>
-                Designed domain models, wallets, and admin panels with
-                role-based access.
-              </li>
-              <li>
-                Handled infra: SSL, backups, alerts, and zero-downtime deploys.
-              </li>
-            </ul>
-          </div>
-          <div class="card-pro p-4">
-            <h6 class="mb-1">
-              AI & Automation (Python) — MT5 & Data Pipelines
-            </h6>
-            <div class="text-muted small mb-2">2024 — Present</div>
-            <ul class="mb-0">
-              <li>
-                Integrated ML signals and news sentiment into automated trading
-                workflows.
-              </li>
-              <li>
-                Built Telegram bots and background schedulers for notifications.
-              </li>
-            </ul>
+
+          <div class="timeline" data-aos="fade-up">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card card-pro p-4">
+                <h6 class="mb-1">Freelance Backend Developer — Laravel, AWS</h6>
+                <div class="text-muted small mb-2">2021 — Present</div>
+                <ul class="mb-0">
+                  <li>
+                    Built REST APIs, auth, payments, queues, reporting, and
+                    admin panels.
+                  </li>
+                  <li>
+                    Set up CI/CD, containerized deployments, and monitoring on
+                    AWS.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card card-pro p-4">
+                <h6 class="mb-1">
+                  Founder / Backend Lead — ResalePlaza, HostAm, WipPay
+                </h6>
+                <div class="text-muted small mb-2">2023 — Present</div>
+                <ul class="mb-0">
+                  <li>
+                    Designed wallets, escrow, orders, payouts, and RBAC admin
+                    tools.
+                  </li>
+                  <li>
+                    Handled infra: SSL, backups, alerts, deploy pipelines, and
+                    zero-downtime practices.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card card-pro p-4">
+                <h6 class="mb-1">Mobile Developer — React Native (Expo)</h6>
+                <div class="text-muted small mb-2">2024 — Present</div>
+                <ul class="mb-0">
+                  <li>
+                    Built Expo apps integrated with Laravel APIs (auth, wallets,
+                    notifications, secure flows).
+                  </li>
+                  <li>
+                    Delivered polished UI screens, API error handling, and
+                    smooth navigation patterns.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-card card-pro p-4">
+                <h6 class="mb-1">AI & Automation (Python) — MT5 & Pipelines</h6>
+                <div class="text-muted small mb-2">2024 — Present</div>
+                <ul class="mb-0">
+                  <li>
+                    Integrated ML signals + news sentiment into automated
+                    workflows.
+                  </li>
+                  <li>
+                    Built Telegram bots, schedulers, and reporting utilities.
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="py-5">
+      <!-- CONTACT -->
+      <section id="contact" class="py-5 section">
         <div class="container">
           <div class="row g-4 align-items-center">
-            <div class="col-lg-7">
+            <div class="col-lg-7" data-aos="fade-up">
               <h2 class="mb-3">Let’s work together</h2>
               <p class="mb-3">
                 Open to backend roles and contracts. Best fit: Laravel APIs,
-                payments, dashboards, and AWS infra.
+                payments/webhooks, dashboards, queues, AWS deployments — and
+                React Native apps (Expo) connected to Laravel backends.
               </p>
-              <div class="d-flex flex-wrap gap-3 align-items-center">
+
+              <div class="d-flex flex-wrap gap-2 align-items-center">
                 <a
-                  href="mailto:frankemmanuel249@gmail.com"
+                  href="mailto:ebuka.mbanusi@miva.edu.ng"
                   class="btn btn-danger px-3"
-                  ><i class="fa-solid fa-envelope me-2"></i>Email Me</a
                 >
+                  <i class="fa-solid fa-envelope me-2"></i> Email Me
+                </a>
+
                 <a
                   href="https://github.com/coder-frank"
                   class="btn btn-dark px-3"
-                  ><i class="fa-brands fa-github me-2"></i>GitHub</a
+                  target="_blank"
+                  rel="noopener"
                 >
+                  <i class="fa-brands fa-github me-2"></i> GitHub
+                </a>
+
                 <a
                   href="https://www.linkedin.com/in/kcoder"
                   class="btn btn-primary px-3"
-                  ><i class="fa-brands fa-linkedin me-2"></i>LinkedIn</a
+                  target="_blank"
+                  rel="noopener"
                 >
+                  <i class="fa-brands fa-linkedin me-2"></i> LinkedIn
+                </a>
+
+                <a
+                  href="https://x.com/mbanusiF"
+                  class="btn btn-outline px-3"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa-brands fa-x-twitter me-2"></i> X
+                </a>
               </div>
-              <p class="text-muted small mt-2 mb-0">Location: Lagos, NG</p>
+
+              <div class="contact-mini mt-3">
+                <div class="mini-pill">
+                  <i class="fa-solid fa-location-dot"></i> Lagos, NG
+                </div>
+                <div class="mini-pill">
+                  <i class="fa-solid fa-link"></i> coder-frank.github.io
+                </div>
+              </div>
             </div>
-            <div class="col-lg-5">
-              <div class="card-pro p-4">
-                <h6 class="mb-3">Quick Stats</h6>
+
+            <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-pro p-4 glow-card">
+                <h6 class="mb-3">Quick Snapshot</h6>
+
                 <div class="row g-3">
                   <div class="col-6">
-                    <div class="card-pro p-3 text-center">
-                      <div class="fw-bold">Laravel</div>
-                      <div>10/12</div>
+                    <div class="stat-card text-center">
+                      <div class="stat-value">Laravel</div>
+                      <div class="stat-label">10 / 12</div>
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="card-pro p-3 text-center">
-                      <div class="fw-bold">AWS</div>
-                      <div>EC2/RDS/S3</div>
+                    <div class="stat-card text-center">
+                      <div class="stat-value">React Native</div>
+                      <div class="stat-label">Expo</div>
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="card-pro p-3 text-center">
-                      <div class="fw-bold">CI/CD</div>
-                      <div>GH Actions</div>
+                    <div class="stat-card text-center">
+                      <div class="stat-value">CI/CD</div>
+                      <div class="stat-label">GH Actions</div>
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="card-pro p-3 text-center">
-                      <div class="fw-bold">DB</div>
-                      <div>MySQL/Redis</div>
+                    <div class="stat-card text-center">
+                      <div class="stat-value">DB</div>
+                      <div class="stat-label">MySQL/Redis</div>
                     </div>
                   </div>
                 </div>
+
+                <hr class="my-4" />
+
+                <a
+                  class="btn btn-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#resumeModal"
+                >
+                  <i class="fa-solid fa-file-lines me-2"></i> View Resume (PDF)
+                </a>
               </div>
             </div>
           </div>
@@ -748,32 +1119,116 @@
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer py-4">
-      <div class="container d-flex justify-content-between align-items-center">
+      <div
+        class="container d-flex justify-content-between align-items-center flex-wrap gap-2"
+      >
         <div class="small text-muted">
           © <span id="year"></span> Ebuka Francis Mbanusi. All rights reserved.
         </div>
         <div class="d-flex gap-3">
-          <a aria-label="GitHub" href="https://github.com/coder-frank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
+          <a
+            aria-label="GitHub"
+            href="https://github.com/coder-frank"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
           <a
             aria-label="LinkedIn"
             href="https://www.linkedin.com/in/kcoder"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a aria-label="Twitter" href="https://x.com/mbanusiF"
-            ><i class="fa-brands fa-x-twitter"></i
-          ></a>
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            aria-label="Twitter"
+            href="https://x.com/mbanusiF"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
         </div>
       </div>
     </footer>
 
+    <!-- PROJECT DETAILS MODAL -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content glass modal-pop">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModalTitle">
+              <i class="fa-solid fa-circle-info me-2"></i>Project Details
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="project-modal-hero">
+              <div class="pm-icon" id="projectModalIcon">
+                <i class="fa-solid fa-cube"></i>
+              </div>
+              <div>
+                <div class="pm-sub text-muted" id="projectModalStack">
+                  Stack
+                </div>
+                <div class="pm-desc" id="projectModalDesc">Description</div>
+              </div>
+            </div>
+
+            <div class="pm-grid mt-3">
+              <div class="pm-card">
+                <div class="pm-card-title">
+                  <i class="fa-solid fa-star me-2"></i>Key Features
+                </div>
+                <ul class="pm-list" id="projectModalFeatures"></ul>
+              </div>
+              <div class="pm-card">
+                <div class="pm-card-title">
+                  <i class="fa-solid fa-diagram-project me-2"></i>What I Built
+                </div>
+                <ul class="pm-list" id="projectModalRole"></ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <a
+              class="btn btn-outline"
+              id="projectModalLink"
+              href="#"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa-solid fa-up-right-from-square me-2"></i>Open
+            </a>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume Modal -->
     <div class="modal fade" id="resumeModal" tabindex="-1" aria-hidden="true">
       <div
         class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen-lg-down"
       >
-        <div class="modal-content glass">
+        <div class="modal-content glass modal-pop">
           <div class="modal-header">
             <h5 class="modal-title">
               <i class="fa-solid fa-file-lines me-2"></i>Resume — Ebuka Francis
@@ -786,6 +1241,7 @@
               aria-label="Close"
             ></button>
           </div>
+
           <div class="modal-body p-0" style="height: 80vh">
             <iframe
               src="assets/Ebuka_Mbanusi_Resume.pdf"
@@ -793,7 +1249,15 @@
               style="width: 100%; height: 100%; border: 0"
             ></iframe>
           </div>
+
           <div class="modal-footer">
+            <a
+              class="btn btn-primary"
+              href="assets/Ebuka_Mbanusi_Resume.pdf"
+              download
+            >
+              <i class="fa-solid fa-download me-2"></i> Download PDF
+            </a>
             <button class="btn btn-secondary" data-bs-dismiss="modal">
               Close
             </button>
@@ -802,64 +1266,21 @@
       </div>
     </div>
 
+    <!-- JS libs -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      function setCookie(n, v, d) {
-        const t = new Date();
-        t.setTime(t.getTime() + d * 24 * 60 * 60 * 1e3);
-        document.cookie =
-          n + "=" + v + ";expires=" + t.toUTCString() + ";path=/";
-      }
-      function getCookie(n) {
-        const s = n + "=";
-        const ca = document.cookie.split(";");
-        for (let c of ca) {
-          c = c.trim();
-          if (c.indexOf(s) === 0) return c.substring(s.length);
-        }
-        return null;
-      }
-      const htmlEl = document.documentElement;
-      const toggles = [
-        document.getElementById("themeToggle"),
-        document.getElementById("themeToggleMobile"),
-      ];
-      function applyTheme(mode) {
-        htmlEl.setAttribute("data-theme", mode);
-        localStorage.setItem("theme", mode);
-        setCookie("theme", mode, 365);
-      }
-      (function () {
-        let saved =
-          localStorage.getItem("theme") || getCookie("theme") || "dark";
-        if (!["light", "dark"].includes(saved)) saved = "light";
-        applyTheme(saved);
-      })();
-      toggles.forEach((btn) => {
-        if (!btn) return;
-        btn.addEventListener("click", () => {
-          const mode =
-            htmlEl.getAttribute("data-theme") === "dark" ? "light" : "dark";
-          applyTheme(mode);
-        });
-      });
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Your JS -->
+    <script src="js/script.js"></script>
 
     <script>
-      (function () {
-        const cc = document.getElementById("certCarousel");
-        if (!cc) return;
-        const items = cc.querySelectorAll(".carousel-item");
-        const prev = cc.querySelector(".carousel-control-prev");
-        const next = cc.querySelector(".carousel-control-next");
-        if (items.length < 2) {
-          prev?.classList.add("d-none");
-          next?.classList.add("d-none");
-          const ind = cc.querySelector(".carousel-indicators");
-          ind?.classList.add("d-none");
-        }
-      })();
+      document.getElementById("year").textContent = new Date().getFullYear();
+      AOS.init({
+        once: true,
+        offset: 80,
+        duration: 650,
+        easing: "ease-out-cubic",
+      });
     </script>
   </body>
 </html>
