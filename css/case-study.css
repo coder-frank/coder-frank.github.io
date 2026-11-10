@@ -1,5 +1,5 @@
 /* Editorial Engineering — case study pages */
-:root{color-scheme:dark;--bg:#111815;--card:#1a241e;--panel:#17211b;--text:#f0f0e8;--muted:#b0bdb1;--signal:#c5e59b;--border:rgba(222,237,221,.16)}
+ :root{color-scheme:dark;--bg:#0C111B;--card:#151F30;--panel:#101827;--text:#EFF4FD;--muted:#A6B7CC;--signal:#73B9FF;--border:rgba(160,187,220,.17)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 "DM Sans",system-ui,-apple-system,sans-serif}

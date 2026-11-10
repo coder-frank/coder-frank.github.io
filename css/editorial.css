@@ -1,28 +1,30 @@
 /* Editorial Engineering · visual system, November 2026.
    The original component CSS stays intact for the Bootstrap behaviours. */
 :root {
-  --bg:#f2f1e9;--bg2:#e9e9df;--card:#faf9f3;--card2:#e7e9df;
-  --text:#15201a;--text2:#27372d;--muted:#59665e;--muted2:#66746b;
-  --border:rgba(20,40,29,.16);--border2:rgba(20,40,29,.09);
-  --primary:#355c41;--primary-lt:#497250;--primary-sub:rgba(56,96,67,.09);
-  --primary-sub2:rgba(56,96,67,.12);--primary-glow:transparent;
-  --accent:#355c41;--accent-lt:#5c7c56;--success:#47704b;--ring:rgba(47,90,54,.32);
-  --nav-bg:rgba(242,241,233,.96);--card-subtle:#faf9f3;--card-hover-border:rgba(42,90,55,.50);
+  /* Light mode: clean technical surfaces, without the warm olive cast. */
+  --bg:#F5F8FC;--bg2:#EDF2F8;--card:#FFFFFF;--card2:#E5EDF7;
+  --text:#0E1B2A;--text2:#25374E;--muted:#4A5E75;--muted2:#62758A;
+  --border:rgba(22,49,79,.16);--border2:rgba(22,49,79,.08);
+  --primary:#1D66B3;--primary-lt:#287CCF;--primary-sub:rgba(29,102,179,.08);
+  --primary-sub2:rgba(29,102,179,.13);--primary-glow:transparent;
+  --accent:#1D66B3;--accent-lt:#287CCF;--success:#16836F;--ring:rgba(29,102,179,.35);
+  --nav-bg:rgba(245,248,252,.96);--card-subtle:#FFFFFF;--card-hover-border:rgba(29,102,179,.50);
   --grad:none;--grad-text:none;--shadow-sm:0 1px 2px rgba(0,0,0,.03);
-  --shadow:0 9px 32px rgba(12,22,17,.035);--shadow-lg:0 18px 38px rgba(12,22,17,.09);
-  --signal:#47704b;
+  --shadow:0 9px 32px rgba(12,22,33,.035);--shadow-lg:0 18px 38px rgba(12,22,33,.09);
+  --signal:#1D66B3;
 }
 [data-theme="dark"] {
-  --bg:#111815;--bg2:#17211b;--card:#1a241e;--card2:#202d24;
-  --text:#f0f0e8;--text2:#d3ddcf;--muted:#b0bdb1;--muted2:#91a297;
-  --border:rgba(222,237,221,.16);--border2:rgba(222,237,221,.075);
-  --primary:#c5e59b;--primary-lt:#d2efaa;--primary-sub:rgba(197,229,155,.1);
-  --primary-sub2:rgba(197,229,155,.14);--primary-glow:transparent;
-  --accent:#c5e59b;--accent-lt:#d2efaa;--success:#b5df96;--ring:rgba(197,229,155,.45);
-  --nav-bg:rgba(17,24,21,.96);--card-subtle:#1a241e;--card-hover-border:rgba(197,229,155,.54);
+  /* Dark mode: graphite/navy foundations with code-blue accents. */
+  --bg:#0C111B;--bg2:#101827;--card:#151F30;--card2:#1B293B;
+  --text:#EFF4FD;--text2:#D6E2F4;--muted:#A6B7CC;--muted2:#8C9FB7;
+  --border:rgba(160,187,220,.17);--border2:rgba(160,187,220,.08);
+  --primary:#73B9FF;--primary-lt:#9FD1FF;--primary-sub:rgba(115,185,255,.1);
+  --primary-sub2:rgba(115,185,255,.16);--primary-glow:transparent;
+  --accent:#73B9FF;--accent-lt:#9FD1FF;--success:#68D5BB;--ring:rgba(115,185,255,.45);
+  --nav-bg:rgba(12,17,27,.96);--card-subtle:#151F30;--card-hover-border:rgba(115,185,255,.54);
   --grad:none;--grad-text:none;--shadow-sm:0 1px 1px rgba(0,0,0,.08);
   --shadow:0 8px 32px rgba(0,0,0,.085);--shadow-lg:0 22px 50px rgba(0,0,0,.18);
-  --signal:#c5e59b;
+  --signal:#73B9FF;
 }
 *,*::before,*::after{font-family:"DM Sans",system-ui,-apple-system,sans-serif}
 .fa-solid,.fas{font-family:"Font Awesome 6 Free";font-weight:900}
