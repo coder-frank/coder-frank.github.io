@@ -11,6 +11,7 @@
     if (progressBar) progressBar.style.width = Math.min(pct, 100) + '%';
   }
   window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
 
   /* ============================================================
      REVEAL (IntersectionObserver)
@@ -68,6 +69,7 @@
     navLinks.forEach(a => a.classList.toggle('active-nav', a.getAttribute('href') === '#' + cur));
   }
   window.addEventListener('scroll', updateNav, { passive: true });
+  window.addEventListener('resize', updateNav, { passive: true });
   updateNav();
 
   /* ============================================================
@@ -125,20 +127,20 @@
      ============================================================ */
   const copyBtn = document.getElementById('copyEmailBtn');
   if (copyBtn) {
+    const originalCopyMarkup = copyBtn.innerHTML;
     copyBtn.addEventListener('click', async () => {
       const email = 'frankemmanuel249@gmail.com';
       try {
         await navigator.clipboard.writeText(email);
-        const orig = copyBtn.innerHTML;
-        copyBtn.innerHTML = '<i class="fa-solid fa-check me-2"></i>Copied!';
-        copyBtn.classList.add('btn-success');
-        copyBtn.classList.remove('btn-ghost');
+        copyBtn.innerHTML = '<i class="fa-solid fa-check" aria-hidden="true"></i> Copied email';
+        copyBtn.setAttribute('aria-label', 'Email address copied');
         setTimeout(() => {
-          copyBtn.innerHTML = orig;
-          copyBtn.classList.remove('btn-success');
-          copyBtn.classList.add('btn-ghost');
-        }, 1800);
-      } catch { window.location.href = 'mailto:' + email; }
+          copyBtn.innerHTML = originalCopyMarkup;
+          copyBtn.setAttribute('aria-label', 'Copy email address');
+        }, 2000);
+      } catch {
+        window.location.href = 'mailto:' + email;
+      }
     });
   }
 

@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Ebuka Francis Mbanusi — Backend Developer</title>
-    <meta name="description" content="Laravel backend and full-stack software engineer building secure APIs, payment infrastructure, React interfaces and deployment pipelines." />
+    <meta name="description" content="Ebuka Francis Mbanusi is a Laravel-focused backend and full-stack engineer. Explore payment integrations, API systems and engineering case studies." />
     <link rel="canonical" href="https://coder-frank.github.io/" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Mbanusi Ebuka Francis" />
     <meta name="keywords" content="Backend Developer, Laravel, PHP, MySQL, Redis, AWS, Docker, REST APIs, React Native, Expo, CI/CD, Lagos, Nigeria" />
-    <meta name="theme-color" content="#050b14" />
+    <meta name="theme-color" content="#111815" />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Newsreader:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
 
     <!-- CSS libs -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -21,6 +23,7 @@
 
     <!-- Portfolio CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/editorial.css" />
 
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
@@ -74,6 +77,7 @@
   </head>
 
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <!-- Scroll progress bar -->
     <div id="scroll-progress" aria-hidden="true"></div>
 
@@ -83,9 +87,11 @@
         <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
           <span class="brand-dot"></span>
           <span>Ebuka<span class="dot">.</span>dev</span>
+          <span class="brand-caption d-none d-xl-inline">Backend engineer / Lagos</span>
         </a>
 
         <div class="d-lg-none ms-auto d-flex align-items-center gap-2">
+          <a class="mobile-cv" href="assets/Ebuka_Mbanusi_Resume.pdf" target="_blank" rel="noopener" aria-label="Open resume PDF">CV <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
           <button id="themeToggleMobile" class="theme-toggle" aria-label="Toggle theme">
             <i class="fa-solid fa-sun icon-sun"></i>
             <i class="fa-solid fa-moon icon-moon"></i>
@@ -97,9 +103,9 @@
 
         <div class="collapse navbar-collapse" id="navbars">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="#projects" data-nav>Work</a></li>
             <li class="nav-item"><a class="nav-link" href="#about" data-nav>About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills" data-nav>Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects" data-nav>Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills" data-nav>Expertise</a></li>
             <li class="nav-item"><a class="nav-link" href="#experience" data-nav>Experience</a></li>
             <li class="nav-item"><a class="nav-link" href="#certifications" data-nav>Certificates</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact" data-nav>Contact</a></li>
@@ -122,103 +128,31 @@
 
     <!-- ===== HERO ===== -->
     <header id="hero" class="hero">
-      <div class="hero-glow" aria-hidden="true"></div>
-      <div class="container">
-        <div class="row align-items-center g-5">
-
-          <!-- Left: Text -->
-          <div class="col-lg-7">
-            <div class="hero-tag reveal">
-              <span class="status-dot"></span>
-              Open to backend &amp; full-stack roles
-            </div>
-
-            <h1 class="hero-heading reveal reveal-d1">
-              Building <span class="grad-text">production APIs</span>,<br class="d-none d-md-block">
-              <span class="grad-text">scalable systems</span> &amp;<br class="d-none d-md-block">
-              <span class="hl-underline">React Native apps</span>.
-            </h1>
-
-            <p class="hero-lead reveal reveal-d2">
-              Laravel APIs, payment infrastructure, React interfaces and dependable deployment pipelines — from architecture to production.
-            </p>
-
-            <div class="d-flex flex-wrap gap-2 reveal reveal-d3">
-              <button class="btn btn-primary px-4" data-bs-toggle="modal" data-bs-target="#resumeModal">
-                <i class="fa-solid fa-file-lines me-2"></i>View Resume
-              </button>
-              <a href="#projects" class="btn btn-outline px-4">
-                <i class="fa-solid fa-briefcase me-2"></i>See Projects
-              </a>
-              <button id="copyEmailBtn" class="btn btn-ghost px-4" type="button">
-                <i class="fa-solid fa-copy me-2"></i>Copy Email
-              </button>
-            </div>
-
-            <div class="trustbar reveal reveal-d4">
-              <div class="trust-item"><i class="fa-brands fa-laravel"></i> Laravel 12</div>
-              <div class="trust-item"><i class="fa-solid fa-database"></i> MySQL / Redis</div>
-              <div class="trust-item"><i class="fa-brands fa-aws"></i> AWS</div>
-              <div class="trust-item"><i class="fa-brands fa-docker"></i> Docker</div>
-              <div class="trust-item"><i class="fa-brands fa-react"></i> React / React Native</div>
-              <div class="trust-item"><i class="fa-solid fa-mobile-screen-button"></i> Expo</div>
-            </div>
-          </div>
-
-          <!-- Right: Avatar + Stats -->
-          <div class="col-lg-5 d-flex flex-column align-items-center gap-4">
-            <div class="hero-avatar-wrap">
-              <div class="hero-avatar" role="img" aria-label="Ebuka Francis Mbanusi"></div>
-              <div class="avatar-ring" aria-hidden="true"></div>
-            </div>
-
-            <div class="row g-3 w-100">
-              <div class="col-4">
-                <div class="stat-card">
-                  <div class="stat-value" data-count="12">0</div>
-                  <div class="stat-label">Projects</div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="stat-card">
-                  <div class="stat-value">API</div>
-                  <div class="stat-label">First Dev</div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="stat-card">
-                  <div class="stat-value">4+</div>
-                  <div class="stat-label">Yrs Exp.</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="hero-badges w-100">
-              <div class="badge-card">
-                <div class="badge-icon"><i class="fa-solid fa-plug"></i></div>
-                <div>
-                  <div class="badge-title">Webhooks</div>
-                  <div class="badge-sub">Verified + secure</div>
-                </div>
-              </div>
-              <div class="badge-card">
-                <div class="badge-icon"><i class="fa-solid fa-bolt"></i></div>
-                <div>
-                  <div class="badge-title">Queues</div>
-                  <div class="badge-sub">Workers + retry</div>
-                </div>
-              </div>
-              <div class="badge-card">
-                <div class="badge-icon"><i class="fa-brands fa-react"></i></div>
-                <div>
-                  <div class="badge-title">React Native</div>
-                  <div class="badge-sub">Expo + REST</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+      <div class="container hero-shell">
+        <div class="hero-topline">
+          <span class="editorial-label"><span class="label-mark" aria-hidden="true"></span> Mbanusi Ebuka Francis</span>
+          <span class="editorial-label hero-number">Independent software engineer · Lagos, Nigeria</span>
         </div>
+        <div class="hero-layout">
+          <div class="hero-main">
+            <div class="hero-tag"><span class="status-dot" aria-hidden="true"></span> Open to backend &amp; full-stack work</div>
+            <h1 class="hero-heading">I build the parts <span class="hero-line">you don’t see.</span><span class="hero-serif">So everything else works.</span></h1>
+            <p class="hero-lead">I’m a Laravel-focused engineer who works across payment integrations, APIs, queues and the unglamorous details of shipping software. I also build React interfaces when the product needs it.</p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary hero-cta">Explore my work <i class="fa-solid fa-arrow-down-right" aria-hidden="true"></i></a>
+              <a class="btn btn-outline hero-secondary" href="assets/Ebuka_Mbanusi_Resume.pdf" target="_blank" rel="noopener">Résumé <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+              <button id="copyEmailBtn" class="hero-email" type="button"><i class="fa-regular fa-copy" aria-hidden="true"></i> Copy email</button>
+            </div>
+          </div>
+          <div class="hero-aside">
+            <figure class="portrait-block">
+              <img src="assets/profile.jpg" width="480" height="480" alt="Portrait of Ebuka Francis Mbanusi" fetchpriority="high" decoding="async">
+              <figcaption><span>FRANK / SOFTWARE ENGINEER</span><span>01 — 01</span></figcaption>
+            </figure>
+            <div class="portrait-footer"><span>Most at home with</span><strong>Laravel, complex APIs &amp; production debugging.</strong></div>
+          </div>
+        </div>
+        <div class="hero-bottomline"><span class="editorial-label">01 / A little bit of everything. Backend first.</span><a href="#projects" aria-label="Scroll to projects">Scroll to the work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a></div>
       </div>
     </header>
 
@@ -229,18 +163,10 @@
         <div class="container">
           <div class="row align-items-center g-5">
             <div class="col-lg-7 reveal-left">
-              <span class="section-label">Who I am</span>
-              <h2>About</h2>
-              <p class="body-text mb-3">
-                I'm <strong>Ebuka Francis Mbanusi</strong> — a backend developer focused on
-                Laravel (PHP 8.2+), MySQL/Redis, Docker, and AWS. I build robust APIs, payment
-                flows &amp; webhooks, background workers, and CI/CD pipelines with strong security
-                and clean maintainable code.
-              </p>
-              <p class="body-text mb-0">
-                I also build React web interfaces and mobile apps with React Native (Expo), connecting seamlessly to
-                Laravel APIs for auth, wallet flows, push notifications, and realtime updates.
-              </p>
+              <span class="section-label">01 / Introduction</span>
+              <h2 class="editorial-section-title">A little about <em>how I work.</em></h2>
+              <p class="body-text mb-3">I’m <strong>Ebuka Francis Mbanusi</strong>. Most of my time goes into Laravel backends: figuring out how data moves, getting payment callbacks right, making slow tasks asynchronous, and keeping applications dependable after deployment.</p>
+              <p class="body-text mb-0">I work across the stack when needed — React on the web, React Native on mobile, and Linux servers when software needs to reach production. I care about straightforward code and solving the actual problem.</p>
             </div>
 
             <div class="col-lg-5 reveal-right">
@@ -264,8 +190,8 @@
       <section id="skills" class="section">
         <div class="container">
           <div class="text-center mb-5 reveal">
-            <span class="section-label">What I work with</span>
-            <h2 class="mb-2">Skills &amp; Stack</h2>
+            <span class="section-label">02 / My toolkit</span>
+            <h2 class="mb-2 editorial-section-title">Tools I actually <em>work with.</em></h2>
             <p class="body-text" style="max-width:480px;margin:0 auto;">
               Backend · DevOps · Mobile — end-to-end product engineering.
             </p>
@@ -373,21 +299,21 @@
         <div class="container">
           <div class="d-flex align-items-end justify-content-between flex-wrap gap-3 mb-5 reveal">
             <div>
-              <span class="section-label">What I've built</span>
-              <h2 class="mb-1">Selected Projects</h2>
-              <p class="body-text mb-0">Selected engineering work, with detailed case studies for featured projects. Architecture diagrams are illustrations, not screenshots.</p>
+              <span class="section-label">03 / Selected projects</span>
+              <h2 class="mb-1 editorial-section-title">A few things I’ve <em>worked on.</em></h2>
+              <p class="body-text mb-0">Projects across fintech, SaaS, commerce and infrastructure. Four featured projects include engineering walkthroughs.</p>
             </div>
-            <div class="project-filters">
-              <button class="filter-btn active" data-filter="all" type="button">All</button>
-              <button class="filter-btn" data-filter="fintech" type="button">Fintech</button>
-              <button class="filter-btn" data-filter="saas" type="button">SaaS</button>
-              <button class="filter-btn" data-filter="ecom" type="button">E-commerce</button>
-              <button class="filter-btn" data-filter="mobile" type="button">Mobile</button>
-              <button class="filter-btn" data-filter="ai" type="button">AI</button>
+            <div class="project-filters" role="group" aria-label="Filter projects by category">
+              <button class="filter-btn active" data-filter="all" type="button" aria-pressed="true">All</button>
+              <button class="filter-btn" data-filter="fintech" type="button" aria-pressed="false">Fintech</button>
+              <button class="filter-btn" data-filter="saas" type="button" aria-pressed="false">SaaS</button>
+              <button class="filter-btn" data-filter="ecom" type="button" aria-pressed="false">E-commerce</button>
+              <button class="filter-btn" data-filter="mobile" type="button" aria-pressed="false">Mobile</button>
+              <button class="filter-btn" data-filter="ai" type="button" aria-pressed="false">AI</button>
             </div>
           </div>
 
-          <div class="row g-4" id="projectGrid">
+          <div class="row g-4" id="projectGrid" aria-live="polite">
 
             <!-- Featured Veyqo -->
             <div class="col-md-6 col-lg-4 project-item reveal reveal-d1" data-tags="fintech saas">
@@ -691,7 +617,7 @@
 
       <!-- ===== APPROACH ===== -->
       <section id="approach" class="section section-compact" aria-labelledby="approachTitle"><div class="container">
-        <span class="section-label">How I engineer</span><h2 id="approachTitle">Built for life after launch</h2>
+        <span class="section-label">04 / Under the hood</span><h2 id="approachTitle" class="editorial-section-title">The work behind <em>“it works”.</em></h2>
         <p class="body-text mb-4">My backend focus is on sound architecture, reliable integrations and practical delivery.</p>
         <div class="row g-3">
           <div class="col-md-4"><div class="card-pro p-4 h-100"><i class="fa-solid fa-diagram-project approach-icon" aria-hidden="true"></i><h3 class="approach-title">Architecture</h3><p class="body-text mb-0">Domain services, API contracts, data models, authorization boundaries and provider integrations.</p></div></div>
@@ -703,8 +629,8 @@
       <section id="experience" class="section">
         <div class="container">
           <div class="mb-5 reveal">
-            <span class="section-label">Work history</span>
-            <h2>Experience</h2>
+            <span class="section-label">05 / Experience</span>
+            <h2 class="editorial-section-title">Learning by <em>shipping.</em></h2>
           </div>
 
           <div class="timeline">
@@ -769,7 +695,7 @@
 
       <!-- ===== CERTIFICATIONS ===== -->
       <section id="certifications" class="section" aria-labelledby="certTitle"><div class="container">
-      <span class="section-label">Continuous learning</span><h2 id="certTitle">Certificates</h2>
+      <span class="section-label">06 / Ongoing learning</span><h2 id="certTitle" class="editorial-section-title">Always <em>learning.</em></h2>
       <p class="body-text mb-4">A selection from my existing certificate archive. Open an image to inspect the credential and issuer.</p>
       <div class="cert-grid"><a class="card-pro cert-tile" href="assets/certificates/cert_1.png" target="_blank" rel="noopener" aria-label="Open certificate image 1"><img src="assets/certificates/cert_1.png" alt="Certificate image 1" loading="lazy"><span>View credential 1 <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i></span></a><a class="card-pro cert-tile" href="assets/certificates/cert_2.png" target="_blank" rel="noopener" aria-label="Open certificate image 2"><img src="assets/certificates/cert_2.png" alt="Certificate image 2" loading="lazy"><span>View credential 2 <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i></span></a><a class="card-pro cert-tile" href="assets/certificates/cert_3.png" target="_blank" rel="noopener" aria-label="Open certificate image 3"><img src="assets/certificates/cert_3.png" alt="Certificate image 3" loading="lazy"><span>View credential 3 <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i></span></a><a class="card-pro cert-tile" href="assets/certificates/cert_4.png" target="_blank" rel="noopener" aria-label="Open certificate image 4"><img src="assets/certificates/cert_4.png" alt="Certificate image 4" loading="lazy"><span>View credential 4 <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i></span></a><a class="card-pro cert-tile" href="assets/certificates/cert_5.png" target="_blank" rel="noopener" aria-label="Open certificate image 5"><img src="assets/certificates/cert_5.png" alt="Certificate image 5" loading="lazy"><span>View credential 5 <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i></span></a><a class="card-pro cert-tile" href="assets/certificates/cert_6.png" target="_blank" rel="noopener" aria-label="Open certificate image 6"><img src="assets/certificates/cert_6.png" alt="Certificate image 6" loading="lazy"><span>View credential 6 <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i></span></a><a class="card-pro cert-tile" href="assets/certificates/cert_7.png" target="_blank" rel="noopener" aria-label="Open certificate image 7"><img src="assets/certificates/cert_7.png" alt="Certificate image 7" loading="lazy"><span>View credential 7 <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i></span></a><a class="card-pro cert-tile" href="assets/certificates/cert_8.png" target="_blank" rel="noopener" aria-label="Open certificate image 8"><img src="assets/certificates/cert_8.png" alt="Certificate image 8" loading="lazy"><span>View credential 8 <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i></span></a></div>
       <p class="body-text mt-3">All available credential images: <a href="https://github.com/coder-frank/coder-frank.github.io/tree/main/assets/certificates" target="_blank" rel="noopener">view archive</a>.</p>
@@ -780,8 +706,8 @@
         <div class="container">
           <div class="row g-5 align-items-center">
             <div class="col-lg-7 reveal-left">
-              <span class="section-label">Get in touch</span>
-              <h2 class="mb-3">Let's work together</h2>
+              <span class="section-label">07 / Contact</span>
+              <h2 class="mb-3 editorial-section-title">Have a backend problem <em>worth solving?</em></h2>
               <p class="body-text mb-4">
                 Open to backend roles and contracts. Best fit: Laravel APIs, payments/webhooks,
                 dashboards, queues, AWS deployments — and React Native apps connected to Laravel backends.
@@ -854,7 +780,7 @@
     <footer class="footer">
       <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
         <div>
-          <div class="footer-brand">Ebuka<span class="dot">.</span>dev</div>
+          <div class="footer-brand">Ebuka<span class="dot">.</span>dev <span class="footer-note">— carefully built, not mass produced.</span></div>
           <div class="footer-copy">© <span id="year"></span> Ebuka Francis Mbanusi. All rights reserved.</div>
         </div>
         <div class="d-flex gap-3 align-items-center footer-links">
