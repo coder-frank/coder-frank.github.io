@@ -1034,3 +1034,26 @@ footer.footer {
   .reveal, .reveal-left, .reveal-right { opacity: 1 !important; transform: none !important; }
   .hero-avatar { animation: none; }
 }
+
+/* Portfolio refresh — visual diagrams are conceptual, not application screenshots. */
+.project-item[hidden]{display:none!important}
+.project-card-featured{border-color:rgba(82,164,255,.4)}
+.project-card-featured .project-num{font-size:.72rem}
+.portfolio-status{display:inline-flex;border:1px solid var(--border);color:var(--muted);padding:5px 9px;border-radius:999px;font-size:.67rem;line-height:1.3}
+.project-visual{border:1px solid var(--border);border-radius:15px;padding:14px;margin:13px 0 17px;background:linear-gradient(145deg,rgba(27,102,190,.17),rgba(51,167,147,.06));min-height:115px}
+.project-visual-header{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:.71rem;margin-bottom:14px}
+.project-visual-header i{color:var(--primary)}
+.project-flow{display:flex;align-items:center;gap:6px;justify-content:space-between}
+.project-flow span{flex:1;text-align:center;border:1px solid var(--border);background:var(--card);border-radius:8px;padding:9px 5px;font-size:.68rem;line-height:1.35;overflow-wrap:anywhere}
+.project-flow>i{color:var(--muted);font-size:.65rem}
+.section-compact{padding-top:30px;padding-bottom:30px}
+.approach-title{font-size:1rem;font-weight:800;margin:14px 0 10px}
+.approach-icon{font-size:1.25rem;color:var(--primary)}
+.cert-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.cert-tile{display:flex;flex-direction:column;overflow:hidden;text-decoration:none;color:inherit;padding:10px;gap:9px}
+.cert-tile img{width:100%;height:150px;object-fit:contain;background:#fff;border-radius:10px}
+.cert-tile span{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:0 5px 5px;font-size:.77rem;font-weight:700}
+.cert-tile:hover{transform:translateY(-3px)}
+@media(max-width:900px){.cert-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:650px){.cert-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.project-flow span{font-size:.60rem;padding:8px 3px}}
+@media(max-width:380px){.cert-grid{grid-template-columns:1fr}}

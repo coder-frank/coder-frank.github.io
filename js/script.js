@@ -150,24 +150,16 @@
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
+      filterBtns.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-pressed', 'false'); });
       btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
       const filter = btn.dataset.filter;
 
       projectItems.forEach(item => {
-        const tags    = (item.getAttribute('data-tags') || '').split(' ');
+        const tags = (item.getAttribute('data-tags') || '').split(' ');
         const visible = filter === 'all' || tags.includes(filter);
-
-        if (visible) {
-          item.style.display = '';
-          requestAnimationFrame(() => item.classList.remove('proj-hidden'));
-        } else {
-          item.classList.add('proj-hidden');
-          item.addEventListener('transitionend', function handler() {
-            if (item.classList.contains('proj-hidden')) item.style.display = 'none';
-            item.removeEventListener('transitionend', handler);
-          });
-        }
+        item.hidden = !visible;
+        item.classList.toggle('proj-hidden', !visible);
       });
     });
   });
@@ -191,6 +183,10 @@
      PROJECT MODAL — populate from PROJECTS data
      ============================================================ */
   const PROJECTS = {
+    veyqo: {title:'Veyqo — Payment Orchestration',icon:'fa-solid fa-code-branch',stack:'Laravel · React · MySQL · Queues · Provider APIs',desc:'An integration layer connecting payment providers and delivering normalized events to application backends.',link:'case-studies/veyqo.html',features:['Provider connections and credential management','Incoming webhook processing and event normalization','Outbound webhook delivery and retries','Queues and notifications','Subscription and metered pricing design'],role:['Designed Laravel payment orchestration backend','Worked on webhook and provider flows','Configured queue worker and mail delivery','Planned admin and developer dashboard features']},
+    tovajo: {title:'Tovajo — Group Organization',icon:'fa-solid fa-people-group',stack:'Laravel · Group workflows · APIs · Queues',desc:'Group management product for organizer and member workflows.',link:'case-studies/tovajo.html',features:['Group creation and organizer tools','Member and role-based APIs','Notifications and background jobs','Organizer monetization planning','Shared hosting deployment'],role:['Worked on API architecture and backend workflows','Configured deployment and job workers','Reviewed organizer features and pricing','Supported product walkthrough planning']},
+    shopbonus: {title:'ShopBonus — Commerce Backend',icon:'fa-solid fa-shield-halved',stack:'Laravel · Auth · API Security · Turnstile',desc:'Backend contributions to commerce services, API access controls and abuse prevention.',link:'case-studies/shopbonus.html',features:['Authentication and authorization','Public endpoint rate limiting','Turnstile middleware review','Request logging and abuse diagnostics','Service integration work'],role:['Reviewed routes, controllers and services','Worked on request security and middleware','Investigated suspicious contact form requests','Supported backend tasks and pull requests']},
+    prestige: {title:'Prestige Properties — Marketplace',icon:'fa-solid fa-building',stack:'Laravel · MySQL · CI/CD · Linux Hosting',desc:'Real estate marketplace backend and Laravel production delivery.',link:'case-studies/prestige.html',features:['Property and agent workflows','Inspection and transaction stages','Authentication and routing','Production release configuration','Deployment troubleshooting'],role:['Worked on production Laravel configuration','Configured GitHub Actions SSH deployment','Resolved PHP handler and asset path issues','Debugged route handling and server setup']},
     solextrade: {
       title: 'SolexTrade',
       icon:  'fa-solid fa-chart-line',
@@ -265,7 +261,7 @@
       icon:  'fa-brands fa-react',
       stack: 'React Native · Expo · Laravel API · Secure Auth Flows',
       desc:  'Mobile fintech app built with Expo — auth, wallet deposits/withdrawals, notifications, polished UI connected to a Laravel backend.',
-      link:  'https://coder-frank.github.io',
+      link:  '#',
       features: [
         'Multi-screen navigation with guarded routes',
         'Auth flows (register / login / OTP / reset)',
