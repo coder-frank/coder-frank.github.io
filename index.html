@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Ebuka Francis Mbanusi — Backend Developer</title>
-    <meta name="description" content="Ebuka Francis Mbanusi is a Laravel-focused backend and full-stack engineer. Explore payment integrations, API systems and engineering case studies." />
+    <meta name="description" content="Backend engineer Ebuka Francis Mbanusi. Selected Laravel, payment infrastructure, API and DevOps projects, with in-depth engineering case studies." />
     <link rel="canonical" href="https://coder-frank.github.io/" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Mbanusi Ebuka Francis" />
@@ -24,6 +24,7 @@
     <!-- Portfolio CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/editorial.css?v=20261110-icons" />
+    <link rel="stylesheet" href="css/layout.css?v=20261110-layout1" />
 
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
@@ -104,10 +105,11 @@
         <div class="collapse navbar-collapse" id="navbars">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-1">
             <li class="nav-item"><a class="nav-link" href="#projects" data-nav>Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#approach" data-nav>Approach</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills" data-nav>Stack</a></li>
             <li class="nav-item"><a class="nav-link" href="#about" data-nav>About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills" data-nav>Expertise</a></li>
             <li class="nav-item"><a class="nav-link" href="#experience" data-nav>Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#certifications" data-nav>Certificates</a></li>
+            
             <li class="nav-item"><a class="nav-link" href="#contact" data-nav>Contact</a></li>
           </ul>
           <div class="d-none d-lg-flex align-items-center gap-2 ms-3 nav-actions">
@@ -126,74 +128,221 @@
       </div>
     </nav>
 
-    <!-- ===== HERO ===== -->
-    <header id="hero" class="hero">
-      <div class="container hero-shell">
-        <div class="hero-topline">
-          <span class="editorial-label"><span class="label-mark" aria-hidden="true"></span> Mbanusi Ebuka Francis</span>
-          <span class="editorial-label hero-number">Independent software engineer · Lagos, Nigeria</span>
+    <!-- ===== HERO: Systems masthead ===== -->
+    <header id="hero" class="hero systems-hero">
+      <div class="container">
+        <div class="systems-masthead">
+          <span>PORTFOLIO / SOFTWARE ENGINEERING</span>
+          <span>LAGOS, NIGERIA <span aria-hidden="true">·</span> 2026</span>
         </div>
-        <div class="hero-layout">
-          <div class="hero-main">
-            <div class="hero-tag"><span class="status-dot" aria-hidden="true"></span> Open to backend &amp; full-stack work</div>
-            <h1 class="hero-heading">I build the parts <span class="hero-line">you don’t see.</span><span class="hero-serif">So everything else works.</span></h1>
-            <p class="hero-lead">I’m a Laravel-focused engineer who works across payment integrations, APIs, queues and the unglamorous details of shipping software. I also build React interfaces when the product needs it.</p>
-            <div class="hero-actions">
-              <a href="#projects" class="btn btn-primary hero-cta">Explore my work <i class="fa-solid fa-arrow-down-right" aria-hidden="true"></i></a>
-              <a class="btn btn-outline hero-secondary" href="assets/Ebuka_Mbanusi_Resume.pdf" target="_blank" rel="noopener">Résumé <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
-              <button id="copyEmailBtn" class="hero-email" type="button"><i class="fa-regular fa-copy" aria-hidden="true"></i> Copy email</button>
+        <div class="systems-hero-grid">
+          <div class="systems-hero-copy">
+            <p class="systems-kicker"><span class="availability-dot" aria-hidden="true"></span> Open to backend &amp; full-stack opportunities</p>
+            <h1 class="systems-title">Good software has <span>a strong backend.</span></h1>
+            <p class="systems-description">I’m Ebuka, a Laravel-focused engineer who builds payment integrations, reliable APIs, background jobs and the infrastructure around them. I care about what happens after a product ships.</p>
+            <div class="systems-actions">
+              <a href="#projects" class="btn btn-primary systems-primary">View selected work <i class="fa-solid fa-arrow-down-right" aria-hidden="true"></i></a>
+              <a href="assets/Ebuka_Mbanusi_Resume.pdf" class="systems-text-link" target="_blank" rel="noopener noreferrer">Read my résumé <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+              <button id="copyEmailBtn" class="systems-text-link" type="button" aria-label="Copy email address"><i class="fa-regular fa-copy" aria-hidden="true"></i> Copy email</button>
             </div>
           </div>
-          <div class="hero-aside">
-            <figure class="portrait-block">
-              <img src="assets/profile.jpg" width="480" height="480" alt="Portrait of Ebuka Francis Mbanusi" fetchpriority="high" decoding="async">
-              <figcaption><span>FRANK / SOFTWARE ENGINEER</span><span>01 — 01</span></figcaption>
-            </figure>
-            <div class="portrait-footer"><span>Most at home with</span><strong>Laravel, complex APIs &amp; production debugging.</strong></div>
-          </div>
+          <aside class="systems-profile" aria-label="Engineering profile">
+            <div class="systems-profile-top">
+              <img src="assets/profile.jpg" alt="Portrait of Ebuka Francis Mbanusi" width="92" height="92" fetchpriority="high" decoding="async">
+              <div><span class="systems-overline">THE ENGINEER</span><strong>Ebuka Francis Mbanusi</strong><span>Backend / Full-stack</span></div>
+            </div>
+            <div class="systems-profile-intro">My work usually sits at the intersection of:</div>
+            <ol class="systems-focus">
+              <li><span>01</span><strong>Payments &amp; integrations</strong><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></li>
+              <li><span>02</span><strong>APIs, queues &amp; data</strong><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></li>
+              <li><span>03</span><strong>Deployments &amp; reliability</strong><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></li>
+            </ol>
+            <div class="systems-profile-bottom"><span class="availability-dot" aria-hidden="true"></span><span>Currently open to new work</span><span class="systems-profile-arrow">↗</span></div>
+          </aside>
         </div>
-        <div class="hero-bottomline"><span class="editorial-label">01 / A little bit of everything. Backend first.</span><a href="#projects" aria-label="Scroll to projects">Scroll to the work <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a></div>
+        <div class="systems-footerline"><span>BUILT WITH LARAVEL, REACT &amp; CURIOSITY</span><a href="#projects">EXPLORE THE WORK <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a></div>
       </div>
     </header>
 
     <main id="main">
 
-      <!-- ===== ABOUT ===== -->
-      <section id="about" class="section">
+      <!-- ===== PROJECTS ===== -->
+      <section id="projects" class="section work-section">
         <div class="container">
-          <div class="row align-items-center g-5">
-            <div class="col-lg-7 reveal-left">
-              <span class="section-label">01 / Introduction</span>
-              <h2 class="editorial-section-title">A little about <em>how I work.</em></h2>
-              <p class="body-text mb-3">I’m <strong>Ebuka Francis Mbanusi</strong>. Most of my time goes into Laravel backends: figuring out how data moves, getting payment callbacks right, making slow tasks asynchronous, and keeping applications dependable after deployment.</p>
-              <p class="body-text mb-0">I work across the stack when needed — React on the web, React Native on mobile, and Linux servers when software needs to reach production. I care about straightforward code and solving the actual problem.</p>
+          <div class="work-heading">
+            <div class="work-heading-main"><span class="section-label">01 / THE WORK</span><h2 class="editorial-section-title">Selected systems. <em>Real decisions.</em></h2>
+              <p class="body-text">A selection of the platforms I’ve built, worked on, or helped take to production. The featured case studies explain the engineering behind the work.</p>
             </div>
-
-            <div class="col-lg-5 reveal-right">
-              <div class="card-pro p-4 glow-card">
-                <p class="overline mb-3">Core Focus</p>
-                <ul class="list-check mb-0">
-                  <li>API design &amp; docs (OpenAPI / Swagger)</li>
-                  <li>Auth (Sanctum/Passport), roles &amp; permissions</li>
-                  <li>Payments &amp; webhooks (Paystack / Flutterwave / Stripe)</li>
-                  <li>Queues, jobs, schedulers, notifications (Mail/FCM)</li>
-                  <li>Mobile apps (React Native + Expo)</li>
-                  <li>AI &amp; automation workflows (Python + MT5)</li>
-                </ul>
-              </div>
+            <div class="work-heading-side"><strong>12</strong><span>PROJECTS<br>4 CASE STUDIES</span></div>
+          </div>
+          <div class="project-filters" role="group" aria-label="Filter projects by category">
+            <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All projects</button>
+            <button type="button" class="filter-btn" data-filter="fintech" aria-pressed="false">Fintech</button>
+            <button type="button" class="filter-btn" data-filter="saas" aria-pressed="false">SaaS</button>
+            <button type="button" class="filter-btn" data-filter="ecom" aria-pressed="false">Commerce</button>
+            <button type="button" class="filter-btn" data-filter="mobile" aria-pressed="false">Mobile</button>
+            <button type="button" class="filter-btn" data-filter="ai" aria-pressed="false">AI</button>
+          </div>
+          <div id="projectGrid" class="work-grid" aria-live="polite">
+            <div class="project-item project-item--featured" data-tags="fintech saas">
+              <article class="casefile js-card" aria-label="Veyqo project">
+                <div class="casefile-information">
+                  <div class="casefile-meta"><span>01 / FEATURED WORK</span><span>PAYMENT INFRASTRUCTURE</span></div>
+                  <div class="casefile-body"><h3>Veyqo</h3><p>Connecting multiple payment providers through one integration layer, with normalized webhooks, background delivery and developer-facing workflows.</p></div>
+                  <div class="casefile-foot">
+                    <div class="casefile-tech"><span>Laravel</span><span>React</span><span>Queues</span></div>
+                    <div class="casefile-actions">
+                      <a href="case-studies/veyqo.html" class="casefile-link js-ext">Read case study <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                      <button type="button" class="casefile-detail js-details" data-project="veyqo" data-bs-toggle="modal" data-bs-target="#projectModal">Quick details <i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="casefile-diagram" role="img" aria-label="Conceptual workflow for Veyqo, not an application screenshot">
+                  <div class="diagram-head"><span>PROVIDER ORCHESTRATION</span><span>ARCHITECTURE / 01</span></div>
+                  <div class="diagram-sequence"><div class="diagram-node"><span class="diagram-node-count">01</span><strong>Provider event</strong></div><div class="diagram-link" aria-hidden="true"><span></span><i class="fa-solid fa-chevron-right"></i></div><div class="diagram-node"><span class="diagram-node-count">02</span><strong>Event normalization</strong></div><div class="diagram-link" aria-hidden="true"><span></span><i class="fa-solid fa-chevron-right"></i></div><div class="diagram-node"><span class="diagram-node-count">03</span><strong>Customer endpoint</strong></div></div>
+                  <div class="diagram-foot"><span>CONCEPTUAL FLOW · NOT SCREENSHOT</span><span>In development</span></div>
+                </div>
+              </article>
+            </div>
+            <div class="project-item project-item--featured" data-tags="saas">
+              <article class="casefile js-card" aria-label="Tovajo project">
+                <div class="casefile-information">
+                  <div class="casefile-meta"><span>02 / FEATURED WORK</span><span>GROUP MANAGEMENT</span></div>
+                  <div class="casefile-body"><h3>Tovajo</h3><p>A platform for organizers and members, with structured group workflows, Laravel APIs, permissions and notifications.</p></div>
+                  <div class="casefile-foot">
+                    <div class="casefile-tech"><span>Laravel</span><span>REST APIs</span><span>Notifications</span></div>
+                    <div class="casefile-actions">
+                      <a href="case-studies/tovajo.html" class="casefile-link js-ext">Read case study <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                      <button type="button" class="casefile-detail js-details" data-project="tovajo" data-bs-toggle="modal" data-bs-target="#projectModal">Quick details <i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="casefile-diagram" role="img" aria-label="Conceptual workflow for Tovajo, not an application screenshot">
+                  <div class="diagram-head"><span>GROUP WORKFLOWS</span><span>ARCHITECTURE / 02</span></div>
+                  <div class="diagram-sequence"><div class="diagram-node"><span class="diagram-node-count">01</span><strong>Organizer</strong></div><div class="diagram-link" aria-hidden="true"><span></span><i class="fa-solid fa-chevron-right"></i></div><div class="diagram-node"><span class="diagram-node-count">02</span><strong>Groups &amp; roles</strong></div><div class="diagram-link" aria-hidden="true"><span></span><i class="fa-solid fa-chevron-right"></i></div><div class="diagram-node"><span class="diagram-node-count">03</span><strong>Member actions</strong></div></div>
+                  <div class="diagram-foot"><span>CONCEPTUAL FLOW · NOT SCREENSHOT</span><span>In development</span></div>
+                </div>
+              </article>
+            </div>
+            <div class="project-item project-item--featured" data-tags="ecom saas">
+              <article class="casefile js-card" aria-label="ShopBonus project">
+                <div class="casefile-information">
+                  <div class="casefile-meta"><span>03 / FEATURED WORK</span><span>COMMERCE BACKEND</span></div>
+                  <div class="casefile-body"><h3>ShopBonus</h3><p>Backend contributions to an e-commerce platform, focusing on API flows, authentication, security controls and service integration.</p></div>
+                  <div class="casefile-foot">
+                    <div class="casefile-tech"><span>Laravel</span><span>Auth</span><span>Security</span></div>
+                    <div class="casefile-actions">
+                      <a href="case-studies/shopbonus.html" class="casefile-link js-ext">Read case study <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                      <button type="button" class="casefile-detail js-details" data-project="shopbonus" data-bs-toggle="modal" data-bs-target="#projectModal">Quick details <i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="casefile-diagram" role="img" aria-label="Conceptual workflow for ShopBonus, not an application screenshot">
+                  <div class="diagram-head"><span>APPLICATION SECURITY</span><span>ARCHITECTURE / 03</span></div>
+                  <div class="diagram-sequence"><div class="diagram-node"><span class="diagram-node-count">01</span><strong>API request</strong></div><div class="diagram-link" aria-hidden="true"><span></span><i class="fa-solid fa-chevron-right"></i></div><div class="diagram-node"><span class="diagram-node-count">02</span><strong>Access controls</strong></div><div class="diagram-link" aria-hidden="true"><span></span><i class="fa-solid fa-chevron-right"></i></div><div class="diagram-node"><span class="diagram-node-count">03</span><strong>Core services</strong></div></div>
+                  <div class="diagram-foot"><span>CONCEPTUAL FLOW · NOT SCREENSHOT</span><span>Backend contribution</span></div>
+                </div>
+              </article>
+            </div>
+            <div class="project-item project-item--featured" data-tags="saas">
+              <article class="casefile js-card" aria-label="Prestige Properties project">
+                <div class="casefile-information">
+                  <div class="casefile-meta"><span>04 / FEATURED WORK</span><span>REAL ESTATE</span></div>
+                  <div class="casefile-body"><h3>Prestige Properties</h3><p>Laravel backend and deployment work for a real-estate platform, from account flows to production routing and release automation.</p></div>
+                  <div class="casefile-foot">
+                    <div class="casefile-tech"><span>Laravel</span><span>MySQL</span><span>CI/CD</span></div>
+                    <div class="casefile-actions">
+                      <a href="case-studies/prestige.html" class="casefile-link js-ext">Read case study <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                      <button type="button" class="casefile-detail js-details" data-project="prestige" data-bs-toggle="modal" data-bs-target="#projectModal">Quick details <i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="casefile-diagram" role="img" aria-label="Conceptual workflow for Prestige Properties, not an application screenshot">
+                  <div class="diagram-head"><span>PLATFORM DELIVERY</span><span>ARCHITECTURE / 04</span></div>
+                  <div class="diagram-sequence"><div class="diagram-node"><span class="diagram-node-count">01</span><strong>Property portal</strong></div><div class="diagram-link" aria-hidden="true"><span></span><i class="fa-solid fa-chevron-right"></i></div><div class="diagram-node"><span class="diagram-node-count">02</span><strong>Laravel services</strong></div><div class="diagram-link" aria-hidden="true"><span></span><i class="fa-solid fa-chevron-right"></i></div><div class="diagram-node"><span class="diagram-node-count">03</span><strong>Production</strong></div></div>
+                  <div class="diagram-foot"><span>CONCEPTUAL FLOW · NOT SCREENSHOT</span><span>Public website</span></div>
+                </div>
+              </article>
+            </div>
+            <div class="work-archive-heading"><span class="section-label">MORE WORK / 05—12</span><h3>Other projects</h3></div>
+            <div class="project-item project-item--archive" data-tags="fintech saas">
+              <article class="archive-entry js-card">
+                <div class="archive-entry-meta"><span>05</span><span>FINTECH</span></div>
+                <div class="archive-entry-body"><h3>SolexTrade</h3><p>Trading, wallet management, payment webhooks and administrative workflows.</p><span class="archive-stack">Laravel / React Native / Webhooks</span></div>
+                <div class="archive-entry-actions"><button type="button" class="js-details" data-project="solextrade" data-bs-toggle="modal" data-bs-target="#projectModal">Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div>
+              </article>
+            </div>
+            <div class="project-item project-item--archive" data-tags="saas fintech">
+              <article class="archive-entry js-card">
+                <div class="archive-entry-meta"><span>06</span><span>TICKETING</span></div>
+                <div class="archive-entry-body"><h3>GatePass.ng</h3><p>Ticketing backend for event pages, payment processing, QR codes and gate validation.</p><span class="archive-stack">Laravel / MySQL / Payments</span></div>
+                <div class="archive-entry-actions"><button type="button" class="js-details" data-project="gatepass" data-bs-toggle="modal" data-bs-target="#projectModal">Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button><a class="js-ext" href="https://gatepass.ng" target="_blank" rel="noopener noreferrer">Visit <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+              </article>
+            </div>
+            <div class="project-item project-item--archive" data-tags="fintech ai">
+              <article class="archive-entry js-card">
+                <div class="archive-entry-meta"><span>07</span><span>ANALYTICS</span></div>
+                <div class="archive-entry-body"><h3>Forex Analytics</h3><p>Forex analytics, MT5 data flows, performance reporting and signal workflows.</p><span class="archive-stack">Laravel / Python / MT5</span></div>
+                <div class="archive-entry-actions"><button type="button" class="js-details" data-project="forex_dashboard" data-bs-toggle="modal" data-bs-target="#projectModal">Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div>
+              </article>
+            </div>
+            <div class="project-item project-item--archive" data-tags="mobile fintech">
+              <article class="archive-entry js-card">
+                <div class="archive-entry-meta"><span>08</span><span>MOBILE</span></div>
+                <div class="archive-entry-body"><h3>WipPay Mobile</h3><p>Mobile wallet UI with secure authentication, transactions and API integration.</p><span class="archive-stack">React Native / Expo / APIs</span></div>
+                <div class="archive-entry-actions"><button type="button" class="js-details" data-project="wippay_mobile" data-bs-toggle="modal" data-bs-target="#projectModal">Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div>
+              </article>
+            </div>
+            <div class="project-item project-item--archive" data-tags="ecom saas">
+              <article class="archive-entry js-card">
+                <div class="archive-entry-meta"><span>09</span><span>E-COMMERCE</span></div>
+                <div class="archive-entry-body"><h3>ResalePlaza</h3><p>Marketplace workflows for vendors, escrow, orders and dispute management.</p><span class="archive-stack">Laravel / Escrow / RBAC</span></div>
+                <div class="archive-entry-actions"><button type="button" class="js-details" data-project="resaleplaza" data-bs-toggle="modal" data-bs-target="#projectModal">Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div>
+              </article>
+            </div>
+            <div class="project-item project-item--archive" data-tags="saas">
+              <article class="archive-entry js-card">
+                <div class="archive-entry-meta"><span>10</span><span>ADTECH</span></div>
+                <div class="archive-entry-body"><h3>AdClickGo</h3><p>Campaign tracking and analytics with redirects, caching and payout workflows.</p><span class="archive-stack">Laravel / Redis / Analytics</span></div>
+                <div class="archive-entry-actions"><button type="button" class="js-details" data-project="adclickgo" data-bs-toggle="modal" data-bs-target="#projectModal">Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div>
+              </article>
+            </div>
+            <div class="project-item project-item--archive" data-tags="saas">
+              <article class="archive-entry js-card">
+                <div class="archive-entry-meta"><span>11</span><span>DEVELOPER TOOLS</span></div>
+                <div class="archive-entry-body"><h3>HostAm</h3><p>Hosting platform with project storage, file management and GitHub integration.</p><span class="archive-stack">Laravel / S3 / GitHub OAuth</span></div>
+                <div class="archive-entry-actions"><button type="button" class="js-details" data-project="hostam" data-bs-toggle="modal" data-bs-target="#projectModal">Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div>
+              </article>
+            </div>
+            <div class="project-item project-item--archive" data-tags="ai saas">
+              <article class="archive-entry js-card">
+                <div class="archive-entry-meta"><span>12</span><span>EDTECH</span></div>
+                <div class="archive-entry-body"><h3>StudyHub</h3><p>Study resources, progress tracking and personalized learning workflows.</p><span class="archive-stack">Laravel / AI / Notifications</span></div>
+                <div class="archive-entry-actions"><button type="button" class="js-details" data-project="studyhub" data-bs-toggle="modal" data-bs-target="#projectModal">Details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div>
+              </article>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- ===== APPROACH ===== -->
+      <section id="approach" class="section section-compact" aria-labelledby="approachTitle"><div class="container">
+        <span class="section-label">02 / THE APPROACH</span><h2 id="approachTitle" class="editorial-section-title">The work behind <em>“it works”.</em></h2>
+        <p class="body-text mb-4">My backend focus is on sound architecture, reliable integrations and practical delivery.</p>
+        <div class="row g-3">
+          <div class="col-md-4"><div class="card-pro p-4 h-100"><i class="fa-solid fa-diagram-project approach-icon" aria-hidden="true"></i><h3 class="approach-title">Architecture</h3><p class="body-text mb-0">Domain services, API contracts, data models, authorization boundaries and provider integrations.</p></div></div>
+          <div class="col-md-4"><div class="card-pro p-4 h-100"><i class="fa-solid fa-shield-halved approach-icon" aria-hidden="true"></i><h3 class="approach-title">Reliability &amp; security</h3><p class="body-text mb-0">Webhook verification, idempotent processing strategies, queues, retries and rate limiting.</p></div></div>
+          <div class="col-md-4"><div class="card-pro p-4 h-100"><i class="fa-solid fa-rocket approach-icon" aria-hidden="true"></i><h3 class="approach-title">Production delivery</h3><p class="body-text mb-0">Git workflows, CI/CD, Linux infrastructure and systematic debugging of live deployments.</p></div></div>
+        </div></div></section>
+
       <!-- ===== SKILLS ===== -->
       <section id="skills" class="section">
         <div class="container">
           <div class="text-center mb-5 reveal">
-            <span class="section-label">02 / My toolkit</span>
+            <span class="section-label">03 / THE STACK</span>
             <h2 class="mb-2 editorial-section-title">Tools I actually <em>work with.</em></h2>
             <p class="body-text" style="max-width:480px;margin:0 auto;">
-              Backend · DevOps · Mobile — end-to-end product engineering.
+              Laravel and API engineering first, with the tools to ship across the stack.
             </p>
           </div>
 
@@ -294,342 +443,39 @@
         </div>
       </section>
 
-      <!-- ===== PROJECTS ===== -->
-      <section id="projects" class="section">
+      <!-- ===== ABOUT ===== -->
+      <section id="about" class="section">
         <div class="container">
-          <div class="d-flex align-items-end justify-content-between flex-wrap gap-3 mb-5 reveal">
-            <div>
-              <span class="section-label">03 / Selected projects</span>
-              <h2 class="mb-1 editorial-section-title">A few things I’ve <em>worked on.</em></h2>
-              <p class="body-text mb-0">Projects across fintech, SaaS, commerce and infrastructure. Four featured projects include engineering walkthroughs.</p>
-            </div>
-            <div class="project-filters" role="group" aria-label="Filter projects by category">
-              <button class="filter-btn active" data-filter="all" type="button" aria-pressed="true">All</button>
-              <button class="filter-btn" data-filter="fintech" type="button" aria-pressed="false">Fintech</button>
-              <button class="filter-btn" data-filter="saas" type="button" aria-pressed="false">SaaS</button>
-              <button class="filter-btn" data-filter="ecom" type="button" aria-pressed="false">E-commerce</button>
-              <button class="filter-btn" data-filter="mobile" type="button" aria-pressed="false">Mobile</button>
-              <button class="filter-btn" data-filter="ai" type="button" aria-pressed="false">AI</button>
-            </div>
-          </div>
-
-          <div class="row g-4" id="projectGrid" aria-live="polite">
-
-            <!-- Featured Veyqo -->
-            <div class="col-md-6 col-lg-4 project-item reveal reveal-d1" data-tags="fintech saas">
-              <article class="card-pro project-card project-card-featured h-100 js-card">
-                <div class="project-stripe"></div>
-                <div class="p-project">
-                  <div class="d-flex justify-content-between align-items-center gap-2 mb-2"><span class="project-num">Featured · Fintech · Infrastructure</span><span class="portfolio-status">In development</span></div>
-                  <div class="project-visual" role="img" aria-label="Conceptual architecture diagram for Veyqo; not a screenshot">
-                    <div class="project-visual-header"><i class="fa-solid fa-code-branch" aria-hidden="true"></i> System overview</div>
-                    <div class="project-flow"><span>Payment providers</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Normalize events</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Developer apps</span></div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-start gap-2 mb-2"><h6 class="mb-0">Veyqo</h6><span class="tech-badge">Payments · Webhooks</span></div>
-                  <p class="project-desc">Developer-first payment orchestration with provider connections, normalized events, customer webhook delivery, queues and subscription workflows.</p>
-                  <div class="meta-row"><span class="meta-pill">Laravel</span><span class="meta-pill">React</span><span class="meta-pill">Queues</span></div>
-                  <div class="project-actions"><a href="case-studies/veyqo.html" class="btn btn-sm btn-ghost js-ext">Case Study <i class="fa-solid fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a><button class="btn btn-sm btn-primary js-details" type="button" data-project="veyqo" data-bs-toggle="modal" data-bs-target="#projectModal"><i class="fa-solid fa-circle-info me-1"></i>Details</button></div>
-                </div>
-              </article>
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7 reveal-left">
+              <span class="section-label">04 / ABOUT ME</span>
+              <h2 class="editorial-section-title">A little about <em>how I work.</em></h2>
+              <p class="body-text mb-3">I’m <strong>Ebuka Francis Mbanusi</strong>. Most of my time goes into Laravel backends: figuring out how data moves, getting payment callbacks right, making slow tasks asynchronous, and keeping applications dependable after deployment.</p>
+              <p class="body-text mb-0">I work across the stack when needed — React on the web, React Native on mobile, and Linux servers when software needs to reach production. I care about straightforward code and solving the actual problem.</p>
             </div>
 
-            <!-- Featured Tovajo -->
-            <div class="col-md-6 col-lg-4 project-item reveal reveal-d2" data-tags="saas">
-              <article class="card-pro project-card project-card-featured h-100 js-card">
-                <div class="project-stripe"></div>
-                <div class="p-project">
-                  <div class="d-flex justify-content-between align-items-center gap-2 mb-2"><span class="project-num">Featured · Community · SaaS</span><span class="portfolio-status">In development</span></div>
-                  <div class="project-visual" role="img" aria-label="Conceptual architecture diagram for Tovajo; not a screenshot">
-                    <div class="project-visual-header"><i class="fa-solid fa-people-group" aria-hidden="true"></i> System overview</div>
-                    <div class="project-flow"><span>Organizers</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Group workflows</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Members</span></div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-start gap-2 mb-2"><h6 class="mb-0">Tovajo</h6><span class="tech-badge">Groups · Organizers</span></div>
-                  <p class="project-desc">Group organization and management platform with organizer tools, member flows, Laravel APIs and background notifications.</p>
-                  <div class="meta-row"><span class="meta-pill">Laravel</span><span class="meta-pill">APIs</span><span class="meta-pill">Notifications</span></div>
-                  <div class="project-actions"><a href="case-studies/tovajo.html" class="btn btn-sm btn-ghost js-ext">Case Study <i class="fa-solid fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a><button class="btn btn-sm btn-primary js-details" type="button" data-project="tovajo" data-bs-toggle="modal" data-bs-target="#projectModal"><i class="fa-solid fa-circle-info me-1"></i>Details</button></div>
-                </div>
-              </article>
-            </div>
-
-            <!-- Featured ShopBonus -->
-            <div class="col-md-6 col-lg-4 project-item reveal reveal-d3" data-tags="ecom saas">
-              <article class="card-pro project-card project-card-featured h-100 js-card">
-                <div class="project-stripe"></div>
-                <div class="p-project">
-                  <div class="d-flex justify-content-between align-items-center gap-2 mb-2"><span class="project-num">Featured · Commerce · Backend</span><span class="portfolio-status">Backend work</span></div>
-                  <div class="project-visual" role="img" aria-label="Conceptual architecture diagram for ShopBonus; not a screenshot">
-                    <div class="project-visual-header"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> System overview</div>
-                    <div class="project-flow"><span>API clients</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Security checks</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Services</span></div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-start gap-2 mb-2"><h6 class="mb-0">ShopBonus</h6><span class="tech-badge">Commerce · Security</span></div>
-                  <p class="project-desc">Backend engineering contributions involving Laravel APIs, authentication, abuse prevention, Cloudflare Turnstile and service integrations.</p>
-                  <div class="meta-row"><span class="meta-pill">Laravel</span><span class="meta-pill">Security</span><span class="meta-pill">APIs</span></div>
-                  <div class="project-actions"><a href="case-studies/shopbonus.html" class="btn btn-sm btn-ghost js-ext">Case Study <i class="fa-solid fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a><button class="btn btn-sm btn-primary js-details" type="button" data-project="shopbonus" data-bs-toggle="modal" data-bs-target="#projectModal"><i class="fa-solid fa-circle-info me-1"></i>Details</button></div>
-                </div>
-              </article>
-            </div>
-
-            <!-- Featured Prestige Properties -->
-            <div class="col-md-6 col-lg-4 project-item reveal reveal-d1" data-tags="saas">
-              <article class="card-pro project-card project-card-featured h-100 js-card">
-                <div class="project-stripe"></div>
-                <div class="p-project">
-                  <div class="d-flex justify-content-between align-items-center gap-2 mb-2"><span class="project-num">Featured · Real estate · Backend</span><span class="portfolio-status">Public website</span></div>
-                  <div class="project-visual" role="img" aria-label="Conceptual architecture diagram for Prestige Properties; not a screenshot">
-                    <div class="project-visual-header"><i class="fa-solid fa-building" aria-hidden="true"></i> System overview</div>
-                    <div class="project-flow"><span>Property portal</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Laravel API</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i><span>Managed deals</span></div>
-                  </div>
-                  <div class="d-flex justify-content-between align-items-start gap-2 mb-2"><h6 class="mb-0">Prestige Properties</h6><span class="tech-badge">Real estate · CI/CD</span></div>
-                  <p class="project-desc">Property marketplace backend and production delivery supporting listings, account workflows and managed property transactions.</p>
-                  <div class="meta-row"><span class="meta-pill">Laravel</span><span class="meta-pill">MySQL</span><span class="meta-pill">CI/CD</span></div>
-                  <div class="project-actions"><a href="case-studies/prestige.html" class="btn btn-sm btn-ghost js-ext">Case Study <i class="fa-solid fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></a><button class="btn btn-sm btn-primary js-details" type="button" data-project="prestige" data-bs-toggle="modal" data-bs-target="#projectModal"><i class="fa-solid fa-circle-info me-1"></i>Details</button></div>
-                </div>
-              </article>
-            </div>
-
-            <!-- 01 SolexTrade -->
-            <div class="col-md-6 col-lg-4 project-item reveal reveal-d1" data-tags="fintech saas">
-              <div class="card-pro project-card h-100 js-card">
-                <div class="project-stripe"></div>
-                <div class="p-project">
-                  <div class="project-num">01&nbsp;<span>Fintech · SaaS</span></div>
-                  <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                    <h6 class="mb-0">SolexTrade</h6>
-                    <span class="tech-badge">Trading · Wallet</span>
-                  </div>
-                  <p class="project-desc">
-                    Full-stack trading &amp; investment platform: wallet management, RBAC admin, webhook-driven payments, and a React Native mobile app.
-                  </p>
-                  <div class="meta-row">
-                    <span class="meta-pill"><i class="fa-brands fa-laravel"></i> Laravel</span>
-                    <span class="meta-pill"><i class="fa-brands fa-react"></i> React Native</span>
-                    <span class="meta-pill"><i class="fa-solid fa-plug"></i> Webhooks</span>
-                  </div>
-                  <div class="project-actions">
-                    <span class="portfolio-status">Private project · details below</span>
-                    <button class="btn btn-sm btn-primary js-details" type="button" data-project="solextrade" data-bs-toggle="modal" data-bs-target="#projectModal">
-                      <i class="fa-solid fa-circle-info me-1"></i>Details
-                    </button>
-                  </div>
-                </div>
+            <div class="col-lg-5 reveal-right">
+              <div class="card-pro p-4 glow-card">
+                <p class="overline mb-3">Core Focus</p>
+                <ul class="list-check mb-0">
+                  <li>API design &amp; docs (OpenAPI / Swagger)</li>
+                  <li>Auth (Sanctum/Passport), roles &amp; permissions</li>
+                  <li>Payments &amp; webhooks (Paystack / Flutterwave / Stripe)</li>
+                  <li>Queues, jobs, schedulers, notifications (Mail/FCM)</li>
+                  <li>Mobile apps (React Native + Expo)</li>
+                  <li>AI &amp; automation workflows (Python + MT5)</li>
+                </ul>
               </div>
             </div>
-
-            <!-- 02 GatePass -->
-            <div class="col-md-6 col-lg-4 project-item reveal reveal-d2" data-tags="saas fintech">
-              <div class="card-pro project-card h-100 js-card">
-                <div class="project-stripe"></div>
-                <div class="p-project">
-                  <div class="project-num">02&nbsp;<span>SaaS · Fintech</span></div>
-                  <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                    <h6 class="mb-0">GatePass.ng</h6>
-                    <span class="tech-badge">Tickets · QR · Pay</span>
-                  </div>
-                  <p class="project-desc">
-                    Event ticketing backend: event pages, secure payments, QR code issuance, check-ins, and a live analytics dashboard.
-                  </p>
-                  <div class="meta-row">
-                    <span class="meta-pill"><i class="fa-brands fa-laravel"></i> Laravel</span>
-                    <span class="meta-pill"><i class="fa-solid fa-database"></i> MySQL</span>
-                    <span class="meta-pill"><i class="fa-solid fa-plug"></i> Webhooks</span>
-                  </div>
-                  <div class="project-actions">
-                    <a href="https://gatepass.ng" target="_blank" rel="noopener" class="btn btn-sm btn-ghost js-ext"><i class="fa-solid fa-up-right-from-square me-1"></i>Visit</a>
-                    <button class="btn btn-sm btn-primary js-details" type="button" data-project="gatepass" data-bs-toggle="modal" data-bs-target="#projectModal">
-                      <i class="fa-solid fa-circle-info me-1"></i>Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 03 Forex Dashboard -->
-            <div class="col-md-6 col-lg-4 project-item reveal reveal-d3" data-tags="fintech ai">
-              <div class="card-pro project-card h-100 js-card">
-                <div class="project-stripe"></div>
-                <div class="p-project">
-                  <div class="project-num">03&nbsp;<span>Fintech · AI</span></div>
-                  <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                    <h6 class="mb-0">Forex Analytics Dashboard</h6>
-                    <span class="tech-badge">MT5 · AI · Charts</span>
-                  </div>
-                  <p class="project-desc">
-                    Real-time forex analytics platform: MT5 data pipeline, AI trade signals, performance reporting, and a clean admin dashboard.
-                  </p>
-                  <div class="meta-row">
-                    <span class="meta-pill"><i class="fa-brands fa-laravel"></i> Laravel</span>
-                    <span class="meta-pill"><i class="fa-brands fa-python"></i> Python</span>
-                    <span class="meta-pill"><i class="fa-solid fa-chart-line"></i> MT5</span>
-                  </div>
-                  <div class="project-actions">
-                    <span class="portfolio-status">Private project · details below</span>
-                    <button class="btn btn-sm btn-primary js-details" type="button" data-project="forex_dashboard" data-bs-toggle="modal" data-bs-target="#projectModal">
-                      <i class="fa-solid fa-circle-info me-1"></i>Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 04 WipPay Mobile -->
-            <div class="col-md-6 col-lg-4 project-item reveal reveal-d1" data-tags="mobile fintech">
-              <div class="card-pro project-card h-100 js-card">
-                <div class="project-stripe"></div>
-                <div class="p-project">
-                  <div class="project-num">04&nbsp;<span>Mobile · Fintech</span></div>
-                  <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                    <h6 class="mb-0">WipPay Mobile</h6>
-                    <span class="tech-badge">Expo · Wallet</span>
-                  </div>
-                  <p class="project-desc">
-                    React Native (Expo) app: auth flows, wallet deposit/withdrawal, push notifications, smooth UI — all powered by a Laravel API.
-                  </p>
-                  <div class="meta-row">
-                    <span class="meta-pill"><i class="fa-brands fa-react"></i> React Native</span>
-                    <span class="meta-pill"><i class="fa-solid fa-mobile-screen-button"></i> Expo</span>
-                    <span class="meta-pill"><i class="fa-solid fa-wifi"></i> REST API</span>
-                  </div>
-                  <div class="project-actions">
-                    <span class="portfolio-status">Private preview</span>
-                    <button class="btn btn-sm btn-primary js-details" type="button" data-project="wippay_mobile" data-bs-toggle="modal" data-bs-target="#projectModal">
-                      <i class="fa-solid fa-circle-info me-1"></i>Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 05 ResalePlaza -->
-            <div class="col-md-6 col-lg-4 project-item reveal reveal-d2" data-tags="ecom saas">
-              <div class="card-pro project-card h-100 js-card">
-                <div class="project-stripe"></div>
-                <div class="p-project">
-                  <div class="project-num">05&nbsp;<span>E-commerce</span></div>
-                  <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                    <h6 class="mb-0">ResalePlaza</h6>
-                    <span class="tech-badge">Escrow · Multi-vendor</span>
-                  </div>
-                  <p class="project-desc">
-                    Multi-vendor e-commerce backend: wallet escrow, disputes workflow, vendor order splitting, and admin product verification.
-                  </p>
-                  <div class="meta-row">
-                    <span class="meta-pill"><i class="fa-brands fa-laravel"></i> Laravel</span>
-                    <span class="meta-pill"><i class="fa-solid fa-bolt"></i> Redis</span>
-                    <span class="meta-pill"><i class="fa-solid fa-user-shield"></i> RBAC</span>
-                  </div>
-                  <div class="project-actions">
-                    <span class="portfolio-status">Details available</span>
-                    <button class="btn btn-sm btn-primary js-details" type="button" data-project="resaleplaza" data-bs-toggle="modal" data-bs-target="#projectModal">
-                      <i class="fa-solid fa-circle-info me-1"></i>Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 06 Adclickgo -->
-            <div class="col-md-6 col-lg-4 project-item reveal reveal-d3" data-tags="saas">
-              <div class="card-pro project-card h-100 js-card">
-                <div class="project-stripe"></div>
-                <div class="p-project">
-                  <div class="project-num">06&nbsp;<span>SaaS</span></div>
-                  <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                    <h6 class="mb-0">Adclickgo</h6>
-                    <span class="tech-badge">Tracking · Analytics</span>
-                  </div>
-                  <p class="project-desc">
-                    Ad tracking platform: campaign analytics, smart redirects, and payout workflows with Redis caching for performance.
-                  </p>
-                  <div class="meta-row">
-                    <span class="meta-pill"><i class="fa-brands fa-laravel"></i> Laravel</span>
-                    <span class="meta-pill"><i class="fa-solid fa-bolt"></i> Redis</span>
-                    <span class="meta-pill"><i class="fa-solid fa-chart-line"></i> Reports</span>
-                  </div>
-                  <div class="project-actions">
-                    <span class="portfolio-status">Private project · details below</span>
-                    <button class="btn btn-sm btn-primary js-details" type="button" data-project="adclickgo" data-bs-toggle="modal" data-bs-target="#projectModal">
-                      <i class="fa-solid fa-circle-info me-1"></i>Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 07 HostAm -->
-            <div class="col-md-6 col-lg-4 project-item reveal reveal-d1" data-tags="saas">
-              <div class="card-pro project-card h-100 js-card">
-                <div class="project-stripe"></div>
-                <div class="p-project">
-                  <div class="project-num">07&nbsp;<span>SaaS</span></div>
-                  <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                    <h6 class="mb-0">HostAm</h6>
-                    <span class="tech-badge">Hosting · File Manager</span>
-                  </div>
-                  <p class="project-desc">
-                    Static hosting platform: isolated project storage, modern file manager, GitHub OAuth, S3 backend, and usage analytics.
-                  </p>
-                  <div class="meta-row">
-                    <span class="meta-pill"><i class="fa-brands fa-laravel"></i> Laravel</span>
-                    <span class="meta-pill"><i class="fa-brands fa-aws"></i> S3</span>
-                    <span class="meta-pill"><i class="fa-brands fa-github"></i> OAuth</span>
-                  </div>
-                  <div class="project-actions">
-                    <span class="portfolio-status">Private project · details below</span>
-                    <button class="btn btn-sm btn-primary js-details" type="button" data-project="hostam" data-bs-toggle="modal" data-bs-target="#projectModal">
-                      <i class="fa-solid fa-circle-info me-1"></i>Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- 08 StudyHub -->
-            <div class="col-md-6 col-lg-4 project-item reveal reveal-d2" data-tags="ai saas">
-              <div class="card-pro project-card h-100 js-card">
-                <div class="project-stripe"></div>
-                <div class="p-project">
-                  <div class="project-num">08&nbsp;<span>AI · SaaS</span></div>
-                  <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
-                    <h6 class="mb-0">StudyHub</h6>
-                    <span class="tech-badge">AI · Learning</span>
-                  </div>
-                  <p class="project-desc">
-                    Study platform with resources, notes, progress tracking, and an AI assistant to generate personalised learning flows.
-                  </p>
-                  <div class="meta-row">
-                    <span class="meta-pill"><i class="fa-brands fa-laravel"></i> Laravel</span>
-                    <span class="meta-pill"><i class="fa-solid fa-robot"></i> AI</span>
-                    <span class="meta-pill"><i class="fa-solid fa-envelope"></i> Emails</span>
-                  </div>
-                  <div class="project-actions">
-                    <span class="portfolio-status">Private project · details below</span>
-                    <button class="btn btn-sm btn-primary js-details" type="button" data-project="studyhub" data-bs-toggle="modal" data-bs-target="#projectModal">
-                      <i class="fa-solid fa-circle-info me-1"></i>Details
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
           </div>
         </div>
       </section>
-
-      <!-- ===== APPROACH ===== -->
-      <section id="approach" class="section section-compact" aria-labelledby="approachTitle"><div class="container">
-        <span class="section-label">04 / Under the hood</span><h2 id="approachTitle" class="editorial-section-title">The work behind <em>“it works”.</em></h2>
-        <p class="body-text mb-4">My backend focus is on sound architecture, reliable integrations and practical delivery.</p>
-        <div class="row g-3">
-          <div class="col-md-4"><div class="card-pro p-4 h-100"><i class="fa-solid fa-diagram-project approach-icon" aria-hidden="true"></i><h3 class="approach-title">Architecture</h3><p class="body-text mb-0">Domain services, API contracts, data models, authorization boundaries and provider integrations.</p></div></div>
-          <div class="col-md-4"><div class="card-pro p-4 h-100"><i class="fa-solid fa-shield-halved approach-icon" aria-hidden="true"></i><h3 class="approach-title">Reliability &amp; security</h3><p class="body-text mb-0">Webhook verification, idempotent processing strategies, queues, retries and rate limiting.</p></div></div>
-          <div class="col-md-4"><div class="card-pro p-4 h-100"><i class="fa-solid fa-rocket approach-icon" aria-hidden="true"></i><h3 class="approach-title">Production delivery</h3><p class="body-text mb-0">Git workflows, CI/CD, Linux infrastructure and systematic debugging of live deployments.</p></div></div>
-        </div></div></section>
 
       <!-- ===== EXPERIENCE ===== -->
       <section id="experience" class="section">
         <div class="container">
           <div class="mb-5 reveal">
-            <span class="section-label">05 / Experience</span>
+            <span class="section-label">05 / EXPERIENCE</span>
             <h2 class="editorial-section-title">Learning by <em>shipping.</em></h2>
           </div>
 
@@ -693,20 +539,12 @@
         </div>
       </section>
 
-      <!-- ===== CERTIFICATIONS ===== -->
-      <section id="certifications" class="section" aria-labelledby="certTitle"><div class="container">
-      <span class="section-label">06 / Ongoing learning</span><h2 id="certTitle" class="editorial-section-title">Always <em>learning.</em></h2>
-      <p class="body-text mb-4">A selection from my existing certificate archive. Open an image to inspect the credential and issuer.</p>
-      <div class="cert-grid"><a class="card-pro cert-tile" href="assets/certificates/cert_1.png" target="_blank" rel="noopener" aria-label="Open certificate image 1"><img src="assets/certificates/cert_1.png" alt="Certificate image 1" loading="lazy"><span>View credential 1 <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i></span></a><a class="card-pro cert-tile" href="assets/certificates/cert_2.png" target="_blank" rel="noopener" aria-label="Open certificate image 2"><img src="assets/certificates/cert_2.png" alt="Certificate image 2" loading="lazy"><span>View credential 2 <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i></span></a><a class="card-pro cert-tile" href="assets/certificates/cert_3.png" target="_blank" rel="noopener" aria-label="Open certificate image 3"><img src="assets/certificates/cert_3.png" alt="Certificate image 3" loading="lazy"><span>View credential 3 <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i></span></a><a class="card-pro cert-tile" href="assets/certificates/cert_4.png" target="_blank" rel="noopener" aria-label="Open certificate image 4"><img src="assets/certificates/cert_4.png" alt="Certificate image 4" loading="lazy"><span>View credential 4 <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i></span></a><a class="card-pro cert-tile" href="assets/certificates/cert_5.png" target="_blank" rel="noopener" aria-label="Open certificate image 5"><img src="assets/certificates/cert_5.png" alt="Certificate image 5" loading="lazy"><span>View credential 5 <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i></span></a><a class="card-pro cert-tile" href="assets/certificates/cert_6.png" target="_blank" rel="noopener" aria-label="Open certificate image 6"><img src="assets/certificates/cert_6.png" alt="Certificate image 6" loading="lazy"><span>View credential 6 <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i></span></a><a class="card-pro cert-tile" href="assets/certificates/cert_7.png" target="_blank" rel="noopener" aria-label="Open certificate image 7"><img src="assets/certificates/cert_7.png" alt="Certificate image 7" loading="lazy"><span>View credential 7 <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i></span></a><a class="card-pro cert-tile" href="assets/certificates/cert_8.png" target="_blank" rel="noopener" aria-label="Open certificate image 8"><img src="assets/certificates/cert_8.png" alt="Certificate image 8" loading="lazy"><span>View credential 8 <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i></span></a></div>
-      <p class="body-text mt-3">All available credential images: <a href="https://github.com/coder-frank/coder-frank.github.io/tree/main/assets/certificates" target="_blank" rel="noopener">view archive</a>.</p>
-      </div></section>
-
       <!-- ===== CONTACT ===== -->
       <section id="contact" class="section">
         <div class="container">
           <div class="row g-5 align-items-center">
             <div class="col-lg-7 reveal-left">
-              <span class="section-label">07 / Contact</span>
+              <span class="section-label">06 / GET IN TOUCH</span>
               <h2 class="mb-3 editorial-section-title">Have a backend problem <em>worth solving?</em></h2>
               <p class="body-text mb-4">
                 Open to backend roles and contracts. Best fit: Laravel APIs, payments/webhooks,
@@ -780,7 +618,7 @@
     <footer class="footer">
       <div class="container d-flex justify-content-between align-items-center flex-wrap gap-3">
         <div>
-          <div class="footer-brand">Ebuka<span class="dot">.</span>dev <span class="footer-note">— carefully built, not mass produced.</span></div>
+          <div class="footer-brand">Ebuka<span class="dot">.</span>dev </div>
           <div class="footer-copy">© <span id="year"></span> Ebuka Francis Mbanusi. All rights reserved.</div>
         </div>
         <div class="d-flex gap-3 align-items-center footer-links">
